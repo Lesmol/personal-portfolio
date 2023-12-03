@@ -1,2 +1,3 @@
-# CloudResumeChallenge_AWS
-We complete the cloud resume challenge with the infrastructure hosted on AWS and the frontend done in React.
+# React + AWS
+
+We build a web page that uses AWS infrastructure and services
