@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 import LMLogo from "../assets/SVG/logo.svg";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
@@ -12,7 +14,9 @@ function Navbar() {
   return (
     <>
       <nav className="flex justify-between items-center mt-4">
-        <img src={LMLogo} alt="The letters LM written in a stylish font." />
+        <Link to={"/"}>
+          <img src={LMLogo} alt="The letters LM written in a stylish font." />
+        </Link>
 
         <button onClick={onToggle} className="text-2xl md:hidden">
           &#9960; Menu
@@ -20,33 +24,38 @@ function Navbar() {
 
         <ul className="hidden text-lg md:flex">
           <li>
-            <a
-              href=""
-              className="text-primary underline hover:text-darker-primary transition 150 ease-in-out"
+            <Link
+              to={"/resume"}
+              className="ml-8 text-primary hover:text-darker-primary transition 150 ease-in-out"
             >
-              Home
-            </a>
+              About
+            </Link>
           </li>
           <li>
-            <a
-              href=""
-              className="ml-8 text-primary underline hover:text-darker-primary transition 150 ease-in-out"
+            <Link
+              to={"/resume"}
+              className="ml-8 text-primary hover:text-darker-primary transition 150 ease-in-out"
             >
               CloudResume
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
 
       {mobileNav ? (
-        <div className="fixed right-0 mt-2 p-3 bg-black w-[150px] rounded-lg">
-          <div className="text-lg mb-2">
-            <a href="#">Home</a>
+        <motion.div
+          className="fixed right-0 mt-2 p-3 bg-black w-[150px] rounded-lg"
+          initial={{ y: -5, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{duration: .2}}
+        >
+          <div className="text-lg">
+            <Link to={"/resume"}>About</Link>
           </div>
           <div className="text-lg">
-            <a href="#">CloudResume</a>
+            <Link to={"/resume"}>CloudResume</Link>
           </div>
-        </div>
+        </motion.div>
       ) : null}
     </>
   );
