@@ -1,7 +1,6 @@
 import React from "react";
 
 import ProjectInfo from "./ProjectInfo";
-import Education from "./Education";
 
 function Project() {
   return (
