@@ -18,8 +18,8 @@ function Navbar() {
           <img src={LMLogo} alt="The letters LM written in a stylish font." />
         </Link>
 
-        <button onClick={onToggle} className="text-2xl md:hidden">
-          &#9960; Menu
+        <button onClick={onToggle} className="text-xl text-primary md:hidden">
+        Menu &#x2724;
         </button>
 
         <ul className="hidden text-lg md:flex">
