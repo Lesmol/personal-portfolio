@@ -12,7 +12,7 @@ function Navbar() {
   }
 
   return (
-    <>
+    <div className="max-w-lg mx-auto">
       <nav className="flex justify-between items-center mt-4">
         <Link to={"/"}>
           <img src={LMLogo} alt="The letters LM written in a stylish font." />
@@ -44,10 +44,10 @@ function Navbar() {
 
       {mobileNav ? (
         <motion.div
-          className="fixed right-0 mt-2 p-3 bg-black w-[150px] rounded-lg"
+          className="fixed right-5 mt-2 p-3 bg-black w-[150px] rounded-lg"
           initial={{ y: -5, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{duration: .2}}
+          transition={{ duration: 0.2 }}
         >
           <div className="text-lg">
             <Link to={"/resume"}>About</Link>
@@ -57,7 +57,7 @@ function Navbar() {
           </div>
         </motion.div>
       ) : null}
-    </>
+    </div>
   );
 }
 

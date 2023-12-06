@@ -1,6 +1,6 @@
 import React from "react";
 
-import arrow from "../assets/SVG/Arrow.svg";
+import arrow from "../../assets/SVG/Arrow.svg";
 
 function EmailMe() {
   return (

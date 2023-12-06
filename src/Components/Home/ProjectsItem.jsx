@@ -1,12 +1,12 @@
 import React from "react";
 
-import githubWhite from "../assets/SVG/github-mark-white.svg";
+import githubWhite from "../../assets/SVG/github-mark-white.svg";
 
 function ProjectsItem(props) {
   return (
     <div className="flex items-center mt-2 ml-4">
       <img
-        className="w-[40px]"
+        className="w-[35px]"
         src={props.image ? props.image : githubWhite}
         alt={"Github Logo"}
       />
