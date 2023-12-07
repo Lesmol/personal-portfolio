@@ -4,9 +4,9 @@ import clock from "../../assets/Image/clock.png";
 
 function Education(props) {
   return (
-    <div>
-      <h1 className="font-bold text-2xl">Education</h1>
-      <div className="mt-3 ml-10 flex justify-between items-center">
+    <div className="mb-8">
+      <h1 className="font-bold text-2xl text-primary">Education</h1>
+      <div className="mt-3 ml-8 justify-between items-center sm:flex">
         <h1 className="text-lg font-medium">{props.title}</h1>
         <div className="flex items-center">
           <img className="w-[25px]" src={clock} alt="Image of a clock" />

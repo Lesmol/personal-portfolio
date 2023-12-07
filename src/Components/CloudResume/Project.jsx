@@ -5,7 +5,7 @@ import ProjectInfo from "./ProjectInfo";
 function Project() {
   return (
     <div className="mt-4">
-      <h1 className="font-bold text-2xl">Projects</h1>
+      <h1 className="font-bold text-2xl text-primary">Projects</h1>
       <ProjectInfo
         title="Techspo Site"
         stack="Azure SQL Database | ASP.NET | C#"

@@ -19,18 +19,18 @@ function Navbar() {
         </Link>
 
         <button onClick={onToggle} className="text-xl text-primary md:hidden">
-        Menu &#x2724;
+          Menu &#x2724;
         </button>
 
         <ul className="hidden text-lg md:flex">
-          <li>
+          {/* <li>
             <Link
-              to={"/resume"}
+              to={"/about"}
               className="ml-8 text-primary hover:text-darker-primary transition 150 ease-in-out"
             >
               About
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               to={"/resume"}
@@ -49,9 +49,9 @@ function Navbar() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.2 }}
         >
-          <div className="text-lg">
-            <Link to={"/resume"}>About</Link>
-          </div>
+          {/* <div className="text-lg">
+            <Link to={"/about"}>About</Link>
+          </div> */}
           <div className="text-lg">
             <Link to={"/resume"}>CloudResume</Link>
           </div>

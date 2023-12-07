@@ -5,6 +5,7 @@ import Project from "../Components/CloudResume/Project";
 import Education from "../Components/CloudResume/Education";
 
 import { motion } from "framer-motion";
+import Certifications from "../Components/CloudResume/Certifications";
 
 function CloudResume() {
   return (
@@ -37,6 +38,13 @@ function CloudResume() {
         quaerat repellat necessitatibus! Nisi corporis error repudiandae est
         praesentium atque deleniti quis."
         />
+      </motion.div>
+      <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+      >
+        <Certifications />
       </motion.div>
     </div>
   );

@@ -3,14 +3,14 @@ import React from "react";
 import Home from "./UI/Home";
 import { Route, Routes } from "react-router-dom";
 import CloudResume from "./UI/CloudResume";
-import Navbar from "./Components/Navbar";
+import AboutPage from "./UI/AboutPage";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      {/* <Route path="/about" element={<AboutPage />} /> */}
       <Route path="/resume" element={<CloudResume />} />
-      <Route path="/resume" element={<Navbar />} />
     </Routes>
   );
 }
