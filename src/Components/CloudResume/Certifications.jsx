@@ -17,7 +17,7 @@ function Certifications() {
           <img
             className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"
             src={Python}
-            alt=""
+            alt="Python Certiport Certification"
           />
         </a>
         <a
@@ -27,7 +27,7 @@ function Certifications() {
           <img
             className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"
             src={AzureFundamentals}
-            alt=""
+            alt="Azure Fundametals Certification"
           />
         </a>
         <a
@@ -37,7 +37,7 @@ function Certifications() {
           <img
             className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"
             src={AzureDeveloper}
-            alt=""
+            alt="Azure Developer Certification"
           />
         </a>
         <a
@@ -47,7 +47,7 @@ function Certifications() {
           <img
             className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"
             src={ITSpecialist_HTML_CSS}
-            alt=""
+            alt="HTML & CSS IT Specialist Certification"
           />
         </a>
       </div>
