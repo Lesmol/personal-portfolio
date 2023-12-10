@@ -31,12 +31,10 @@ function CloudResume() {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <Education
-          title="CTU Training Solutions"
+          title="CTU Training Solutions - Pretoria"
           duration="2022-Present"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae maiores
-        exercitationem recusandae, sit dicta aspernatur veritatis atque facilis,
-        quaerat repellat necessitatibus! Nisi corporis error repudiandae est
-        praesentium atque deleniti quis."
+          description="I am going into my 3rd year, specialising in Big Data Analytics 
+          and earn the Information Technology: Database Development qualification."
         />
       </motion.div>
       <motion.div
