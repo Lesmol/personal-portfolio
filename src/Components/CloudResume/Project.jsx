@@ -18,7 +18,7 @@ function Project() {
       />
       <ProjectInfo
         title="Cloud Resume Challenge"
-        stack="React | AWS | GitHub Actions | Terraform"
+        stack="React | Azure | GitHub Actions | Terraform"
         description="This website your looking at is the end product of the cloud resume challenge, 
         with a little twist. I used ReactJS for the frontend of the project and Terraform for the IaC."
       />
