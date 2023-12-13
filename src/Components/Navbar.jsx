@@ -48,7 +48,7 @@ function Navbar() {
             className="fixed right-5 mt-2 p-3 bg-black w-[150px] rounded-lg sm:hidden"
             initial={{ y: -5, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            exit={{y: 5, opacity: 0}}
+            exit={{y: -5, opacity: 0}}
             transition={{ duration: 0.2 }}
           >
             {/* <div className="text-lg">
