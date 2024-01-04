@@ -1,6 +1,6 @@
 import React from "react";
 
-import github from "../../assets/Image/github.png";
+import github from "../../assets/Image/Github.png";
 
 function ProjectInfo(props) {
   return (
