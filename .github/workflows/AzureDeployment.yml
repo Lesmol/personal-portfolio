@@ -1,1 +1,8 @@
+name: Azure Blob Storage Deploy
 
+on:
+  push:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
