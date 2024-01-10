@@ -1,9 +1,13 @@
-import { render } from "@testing-library/react";
-import { expect, test } from "vitest";
+import { render, screen } from "@testing-library/react";
 import Navbar from "./Navbar";
+import { MemoryRouter } from "react-router-dom";
 
 test("renders logo", () => {
-  render(<Navbar />);
+  render(
+    <MemoryRouter>
+      <Navbar />
+    </MemoryRouter>
+  );
 
   const imgElement = screen.getByRole("img", {
     name: /lm/i,

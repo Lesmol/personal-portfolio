@@ -20,16 +20,6 @@ jobs:
         with:
           node-version: 18
 
-      - name: Hello World
-        run: echo "Hello World"
-        shell: bash
-
-      - name: Check node
-        run: node -v
-
-      - name: Check npm version
-        run: npm -v
-
       - name: Install npm package
         run: npm ci
 
