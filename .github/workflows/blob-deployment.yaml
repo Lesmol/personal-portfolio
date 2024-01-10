@@ -32,11 +32,12 @@ jobs:
       with:
         inlineScript: |
             az storage blob upload-batch --destination-path '$web' --pattern './dist/*' --source ./dist --account-name cloudresumechallenge --auth-mode key -d '$web' -s .
+
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "cloud-resume-challenge-cdn" --name "https://lesediresume.azureedge.net" --resource-group "cloud-resume-challenge"
+           az cdn endpoint purge --content-paths  "/*" --profile-name "cloud-resume-challenge-cdn" --name "https://cloudresumechallenge.z1.web.core.windows.net" --resource-group "cloud-resume-challenge"
 
   # Azure logout
     - name: logout
