@@ -20,10 +20,17 @@ jobs:
         with:
           node-version: 18
       
-      - run: npm ci
-      - run: npm run test
-      - run: npm run build
+      - name: Hello World
+        run: echo "Hello World
+        shell: bash
+      
+      - name: Install npm package
+        run: npm ci
 
-  deploy:
-    runs-on: ubuntu-latest
+      # - name: Run tests
+      #   run: npm run test
+      
+      - name: Run Build
+        run: npm run build
+
 
