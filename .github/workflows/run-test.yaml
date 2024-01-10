@@ -2,8 +2,9 @@ name: Run test
 
 on:
   push:
-    branches:
-      - azure-actions
+    branches: 
+      - '*'
+      - '!main'
   workflow_dispatch:
 
 jobs:
