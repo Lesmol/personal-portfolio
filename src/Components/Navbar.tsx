@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import LMLogo from "../assets/SVG/logo.svg";
 import { Link } from "react-router-dom";
