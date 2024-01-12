@@ -18,7 +18,7 @@ function UserSummary() {
             />
           </div>
           <div className="ml-2">
-            <div className="text-4xl">Duke Webbs</div>
+            <div className="text-4xl">Lesedi Molemi</div>
             <div className="text-sm text-primary">
               I design and write the code.
             </div>
