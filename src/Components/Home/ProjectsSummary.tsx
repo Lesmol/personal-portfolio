@@ -1,5 +1,3 @@
-import React from "react";
-
 import ProjectsItem from "./ProjectsItem";
 
 function ProjectsSummary() {

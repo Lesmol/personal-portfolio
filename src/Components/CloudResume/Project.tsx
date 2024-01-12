@@ -1,5 +1,3 @@
-import React from "react";
-
 import ProjectInfo from "./ProjectInfo";
 
 function Project() {

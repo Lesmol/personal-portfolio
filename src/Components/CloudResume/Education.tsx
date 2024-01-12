@@ -1,8 +1,12 @@
-import React from "react";
-
 import clock from "../../assets/Image/clock.png";
 
-function Education(props) {
+type EducationProps = {
+  title: string;
+  duration: string;
+  description: string;
+};
+
+function Education(props: EducationProps) {
   return (
     <div className="mb-8">
       <h1 className="font-bold text-2xl text-primary">Education</h1>

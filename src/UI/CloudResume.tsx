@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../Components/Navbar";
 import ResumeHeader from "../Components/CloudResume/ResumeHeader";
 import Project from "../Components/CloudResume/Project";

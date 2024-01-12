@@ -1,9 +1,6 @@
-import React from "react";
-
 import userImage from "../../assets/Image/me_2.png";
 import linkedIn from "../../assets/Image/LinkedIn.png";
 import github from "../../assets/Image/Github.png";
-import lineChart from "../../assets/Image/LineChart.png";
 
 function UserSummary() {
   return (

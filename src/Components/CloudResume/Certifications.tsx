@@ -1,5 +1,3 @@
-import React from "react";
-
 import AzureDeveloper from "../../assets/Image/azure_developer.png";
 import AzureFundamentals from "../../assets/Image/azure_data_fundamentals.png";
 import ITSpecialist_HTML_CSS from "../../assets/Image/certiport_html_css.png";
