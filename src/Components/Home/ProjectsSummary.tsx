@@ -5,12 +5,12 @@ function ProjectsSummary() {
     <div className="mt-8">
       <h3 className="text-primary text-xl">Projects</h3>
       <ProjectsItem
-        title="Techspo Website"
-        link="https://github.com/Lesmol/Techspo_Website"
+        title="Cloud Resume Challenge"
+        link="https://github.com/Lesmol/CloudResumeChallenge_AWS"
       />
       <ProjectsItem
-        title="CloudResume Challenge"
-        link="https://github.com/Lesmol/CloudResumeChallenge_AWS"
+        title="Techspo Website"
+        link="https://github.com/Lesmol/Techspo_Website"
       />
     </div>
   );
