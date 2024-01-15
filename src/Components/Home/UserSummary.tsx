@@ -26,10 +26,10 @@ function UserSummary() {
             href="https://www.linkedin.com/in/lesedi-molemi-b589751a6/"
             target="_blank"
           >
-            <img src={linkedIn} alt="LinkedIn Logo" className="w-9"/>
+            <img src={linkedIn} alt="LinkedIn Logo"/>
           </a>
           <a href="https://github.com/Lesmol" target="_blank">
-            <img src={github} alt="Github Logo" className="ml-8 w-9" />
+            <img src={github} alt="Github Logo" className="ml-8" />
           </a>
         </div>
       </div>
