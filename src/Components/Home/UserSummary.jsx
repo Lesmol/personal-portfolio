@@ -26,7 +26,7 @@ function UserSummary() {
         </div>
         <div className="flex justify-center mt-8">
           <a
-            href="https://www.linkedin.com/in/lesedi-molemi-b589751a6/"
+            href="https://www.linkedin.com/in/lvmolemi/"
             target="_blank"
           >
             <img src={linkedIn} alt="LinkedIn Logo" />
