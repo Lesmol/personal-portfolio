@@ -1,9 +1,6 @@
-import React from "react";
-
 import userImage from "../../assets/Image/me_2.png";
 import linkedIn from "../../assets/Image/LinkedIn.png";
 import github from "../../assets/Image/Github.png";
-import lineChart from "../../assets/Image/LineChart.png";
 
 function UserSummary() {
   return (
@@ -20,7 +17,7 @@ function UserSummary() {
           <div className="ml-2">
             <div className="text-4xl">Lesedi Molemi</div>
             <div className="text-sm text-primary">
-              I design and write the code.
+              I write code and read books.
             </div>
           </div>
         </div>
@@ -29,7 +26,7 @@ function UserSummary() {
             href="https://www.linkedin.com/in/lvmolemi/"
             target="_blank"
           >
-            <img src={linkedIn} alt="LinkedIn Logo" />
+            <img src={linkedIn} alt="LinkedIn Logo"/>
           </a>
           <a href="https://github.com/Lesmol" target="_blank">
             <img src={github} alt="Github Logo" className="ml-8" />
