@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../Components/Navbar";
 import ResumeHeader from "../Components/CloudResume/ResumeHeader";
 import Project from "../Components/CloudResume/Project";
@@ -34,7 +33,7 @@ function CloudResume() {
           title="CTU Training Solutions - Pretoria"
           duration="2022-Present"
           description="I am going into my 3rd year, specialising in Big Data Analytics 
-          and earn the Information Technology: Database Development qualification."
+          to earn my Information Technology: Database Development qualification."
         />
       </motion.div>
       <motion.div

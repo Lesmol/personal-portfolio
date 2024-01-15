@@ -1,5 +1,3 @@
-import React from "react";
-
 function ResumeHeader() {
   return (
     <div className="bg-light mt-8 rounded-xl p-2">
