@@ -1,13 +1,11 @@
-import arrow from "../../assets/SVG/Arrow.svg";
-
 function EmailMe() {
   return (
-    <div className="flex items-center justify-center mt-8">
-      <img src={arrow} alt="Arrow pointing to the 1 o'clock direction" />
+    <div className="flex items-center justify-center mt-8 text-primary hover:text-darker-primary transition 150 ease-out">
+      <span className="text-xl">&#x2197;</span>
       <a
-        href=""
-        target="_blank"
-        className="ml-4 text-primary hover:text-darker-primary transition 150 ease-out"
+        href="mailto:molemilesedi@gmail.com"
+        // target="_blank"
+        className="ml-2"
       >
         Email me
       </a>

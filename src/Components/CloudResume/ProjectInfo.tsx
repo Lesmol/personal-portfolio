@@ -1,4 +1,4 @@
-import github from "../../assets/Image/Github.png";
+import github from "../../assets/SVG/github-mark-white.svg";
 
 type ProjectInfoProps = {
   title: string;
@@ -12,7 +12,7 @@ function ProjectInfo(props: ProjectInfoProps) {
     <div className="mb-8">
       <div className="space-x-2 ml-6 mt-3 items-center md:justify-between md:flex">
         <a href={props.link} target="_blank" className="flex items-center">
-          <img src={github} alt="Github logo" />
+          <img src={github} alt="Github logo" className="w-9"/>
           <p className="ml-2 font-medium md:text-lg">{props.title}</p>
         </a>
         <p className="text-primary">{props.stack}</p>

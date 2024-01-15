@@ -17,7 +17,7 @@ function UserSummary() {
           <div className="ml-2">
             <div className="text-4xl">Lesedi Molemi</div>
             <div className="text-sm text-primary">
-              I design and write the code.
+              I write code and read books.
             </div>
           </div>
         </div>
@@ -26,10 +26,10 @@ function UserSummary() {
             href="https://www.linkedin.com/in/lesedi-molemi-b589751a6/"
             target="_blank"
           >
-            <img src={linkedIn} alt="LinkedIn Logo" />
+            <img src={linkedIn} alt="LinkedIn Logo" className="w-9"/>
           </a>
           <a href="https://github.com/Lesmol" target="_blank">
-            <img src={github} alt="Github Logo" className="ml-8" />
+            <img src={github} alt="Github Logo" className="ml-8 w-9" />
           </a>
         </div>
       </div>
