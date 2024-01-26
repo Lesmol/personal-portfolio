@@ -1,6 +1,4 @@
 import userImage from "../../assets/Image/me_2.png";
-import linkedIn from "../../assets/Image/LinkedIn.png";
-import github from "../../assets/Image/Github.png";
 
 function UserSummary() {
   return (
