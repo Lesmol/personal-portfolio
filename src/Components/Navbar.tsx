@@ -15,11 +15,11 @@ function Navbar() {
     <div className="max-w-lg mx-auto">
       <nav className="flex justify-between items-center mt-4">
         <Link to={"/"}>
-          <img src={LMLogo} alt="The letters LM written in a stylish font." />
+          <img src={LMLogo} alt="The letters LM written in a stylish font." className="md: w-14" />
         </Link>
 
         <button onClick={onToggle} className="text-xl text-primary sm:hidden">
-          Menu &#x2724;
+          Menu &#10022;
         </button>
 
         <ul className="hidden text-lg sm:flex">
