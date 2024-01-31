@@ -1,12 +1,16 @@
+import TopSection from "../Components/About/TopSection";
 import Navbar from "../Components/Navbar";
-import About from "../Components/Home/About";
+import Description from "../Components/About/Description";
+import RandomLinks from "../Components/About/RandomLinks";
 
 function AboutPage() {
   return (
-    <>
+    <div className="container mx-auto max-w-3xl items-center">
       <Navbar />
-      <About />
-    </>
+      <TopSection />
+      <Description />
+      <RandomLinks />
+    </div>
   );
 }
 

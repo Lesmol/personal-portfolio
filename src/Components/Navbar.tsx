@@ -23,14 +23,14 @@ function Navbar() {
         </button>
 
         <ul className="hidden text-lg sm:flex">
-          {/* <li>
+          <li>
             <Link
-              to={"/"}
+              to={"/about"}
               className="ml-8 text-primary hover:text-darker-primary transition 150 ease-in-out"
             >
-              Home
+              About
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link
               to={"/resume"}
@@ -53,6 +53,9 @@ function Navbar() {
           >
             <div className="text-lg  pl-5 pt-2 pb-2">
               <Link to={"/"}>Home</Link>
+            </div>
+            <div className="text-lg  pl-5 pb-2">
+              <Link to={"/about"}>About</Link>
             </div>
             <div className="text-lg  pl-5 pb-2">
               <Link to={"/resume"}>Resume</Link>
