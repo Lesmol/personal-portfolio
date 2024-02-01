@@ -13,16 +13,16 @@ function RandomLinks() {
       <div className="grid md:grid-cols-4 mt-4">
         <div className="">
           <Link
-            imagePath={milk_road}
-            alt="Milk man lying down"
-            title="Milk Road"
-            link="https://milkroad.com/daily/"
-          />
-          <Link
             imagePath={tony_dinh}
             alt="Tony Dinh twitter profile picture"
             title="Tony Dinh"
             link="https://news.tonydinh.com/"
+          />
+          <Link
+            imagePath={milk_road}
+            alt="Milk man lying down"
+            title="Milk Road"
+            link="https://milkroad.com/daily/"
           />
         </div>
         <div className="">
