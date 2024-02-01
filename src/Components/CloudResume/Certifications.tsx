@@ -1,6 +1,7 @@
 import AzureDeveloper from "../../assets/Image/azure_developer.png";
 import AzureFundamentals from "../../assets/Image/azure_data_fundamentals.png";
 import ITSpecialist_HTML_CSS from "../../assets/Image/certiport_html_css.png";
+import ITSpecialist_JavaScript from "../../assets/Image/javascript.png";
 import Python from "../../assets/Image/python.png";
 
 function Certifications() {
@@ -46,6 +47,16 @@ function Certifications() {
             className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"
             src={ITSpecialist_HTML_CSS}
             alt="HTML & CSS IT Specialist Certification"
+          />
+        </a>
+        <a
+          href="https://www.credly.com/badges/6f5716bb-7607-440b-bd16-c3c5e608f4fd/public_url"
+          target="_blank"
+        >
+          <img
+            className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"
+            src={ITSpecialist_JavaScript}
+            alt="JavaScript IT Specialist Certification"
           />
         </a>
       </div>

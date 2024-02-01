@@ -4,10 +4,9 @@ function EmailMe() {
       <span className="text-xl">&#x2197;</span>
       <a
         href="mailto:molemilesedi@gmail.com"
-        // target="_blank"
         className="ml-2"
       >
-        Email me
+        Email
       </a>
     </div>
   );
