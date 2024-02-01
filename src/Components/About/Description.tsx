@@ -16,7 +16,7 @@ function Description() {
         In addition to writing code, I{" "}
         <span className="text-primary font-bold">WRITE</span> a lot about
         anything and everything. When I am not eating or sleeping, I am on my
-        desk writing, reading or thinking of what to do next.
+        desk writing, reading, listening or thinking of what to do next.
       </p>
     </div>
   );
