@@ -10,6 +10,6 @@ Like any project, there is always something to improve:
 * Add a "Blogs" page
 * Minor UI/UX upgrades
 ***
-[The link to the website](https://lvmolemi.com/)
+[lvmolemi.com](https://lvmolemi.com/)
 
 [![My Skills](https://skillicons.dev/icons?i=react,vite,vitest,ts,tailwind,azure,githubactions,git&perline=4)](https://skillicons.dev)

@@ -12,6 +12,10 @@ function ProjectsSummary() {
         title="Techspo Website"
         link="https://github.com/Lesmol/Techspo_Website"
       />
+      <ProjectsItem
+        title="Varsity Registration"
+        link="https://github.com/Lesmol/varsity_registration"
+      />
     </div>
   );
 }

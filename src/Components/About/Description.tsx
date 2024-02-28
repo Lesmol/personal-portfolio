@@ -1,10 +1,11 @@
 function Description() {
   return (
     <div className="mt-10">
-      <p>Hi, I am Lesedi.</p>
+      <p>Hi, I'm Lesedi.</p>
       <br />
       <p>
-        An avid reader of books, Formula 1 fanatic, Messi fanboy, and I am really sad Lewis Hamilton is getting old.
+        An avid reader of books, Formula 1 fanatic, Messi fanboy, and I'm really
+        sad Lewis Hamilton is moving to Ferrari.
       </p>
       <br />
       <p>
@@ -15,8 +16,15 @@ function Description() {
       <p>
         In addition to writing code, I{" "}
         <span className="text-primary font-bold">WRITE</span> a lot about
-        anything and everything. When I am not eating or sleeping, I am on my
-        desk writing, reading, listening or thinking of what to do next.
+        anything and everything. My writing bias was heavily influenced by{" "}
+        <a
+        target="_blank"
+          href="https://paulgraham.com/read.html"
+          className="underline font-medium"
+        >
+          THIS
+        </a>
+        .
       </p>
     </div>
   );

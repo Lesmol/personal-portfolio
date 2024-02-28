@@ -14,6 +14,14 @@ function Project() {
          click on the title, you'll be redirected to the repo where you can read more in the README file."
       />
       <ProjectInfo
+        title="Varsity Registration"
+        link="https://github.com/Lesmol/varsity_registration"
+        stack="Next.js | Firebase Auth | TS"
+        description="A Next.js web application that allows for an automated tertiary application experience to any tertiary 
+        institution we offer. This is the frontend repo built in Next.js and TypeScript. The application is still in 
+        development, but we have managed to add user authentication by making use of Firbases Auth service."
+      />
+      <ProjectInfo
         title="Techspo Site"
         link="https://github.com/Lesmol/Techspo_Website"
         stack="Azure SQL Database | ASP.NET | C#"
