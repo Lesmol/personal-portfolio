@@ -9,12 +9,12 @@ function ProjectsSummary() {
         link="https://github.com/Lesmol/CloudResumeChallenge_AWS"
       />
       <ProjectsItem
-        title="Techspo Website"
-        link="https://github.com/Lesmol/Techspo_Website"
-      />
-      <ProjectsItem
         title="Varsity Registration"
         link="https://github.com/Lesmol/varsity_registration"
+      />
+      <ProjectsItem
+        title="Techspo Website"
+        link="https://github.com/Lesmol/Techspo_Website"
       />
     </div>
   );
