@@ -7,7 +7,6 @@ On each push to the main branch GitHub Actions is fired and the workflow at /.gi
 # Future Improvements
 Like any project, there is always something to improve:
 * Add earlier mentioned Azure Function for the counter feature
-* Add more tests
 * Add a "Blogs" page
 * Minor UI/UX upgrades
 ***
