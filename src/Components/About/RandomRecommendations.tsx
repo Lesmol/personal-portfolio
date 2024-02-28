@@ -1,6 +1,6 @@
 import milk_road from "../../assets/Image/milk_road.png";
-import tony_dinh from "../../assets/Image/tony_dinh.png";
-import indie_hackers from "../../assets/Image/indie_hackers.jpeg";
+import google from "../../assets/Image/google.jpg";
+import paul_buchheit from "../../assets/Image/paul_buchheit.jpg";
 import paul_graham from "../../assets/Image/paul_graham.jpg";
 import founders from "../../assets/Image/founders.jpeg";
 import naval from "../../assets/Image/naval_ravikant.jpg";
@@ -13,10 +13,10 @@ function RandomLinks() {
       <div className="grid md:grid-cols-4 mt-4">
         <div className="">
           <Link
-            imagePath={tony_dinh}
-            alt="Tony Dinh twitter profile picture"
-            title="Tony Dinh"
-            link="https://news.tonydinh.com/"
+            imagePath={google}
+            alt="Google logo"
+            title="Stevey's Rant"
+            link="https://gist.github.com/chitchcock/1281611"
           />
           <Link
             imagePath={milk_road}
@@ -27,16 +27,16 @@ function RandomLinks() {
         </div>
         <div className="">
           <Link
-            imagePath={indie_hackers}
-            alt="Indie Hackers profile picture"
-            title="Indie Hackers"
-            link="https://www.indiehackers.com/podcasts"
+            imagePath={paul_buchheit}
+            alt="Paul Buchheit face"
+            title="Paul Buchheit"
+            link="https://paulbuchheit.blogspot.com/2009/01/overnight-success-takes-long-time.html"
           />
           <Link
             imagePath={paul_graham}
             alt="Paul Graham speaking"
-            title="Paul Graham "
-            link="https://paulgraham.com/articles.html"
+            title="Paul Graham"
+            link="https://paulgraham.com/selfindulgence.html"
           />
         </div>
         <div className="">
