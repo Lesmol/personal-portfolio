@@ -6,15 +6,17 @@ function ReachOut() {
       <h1 className="text-xl text-primary">Reach out</h1>
       <p>
         I know, I know. Lesedi why don't you have Instagram? Lesedi why don't
-        you have TikTok? Lesedi why don't you have Twitter? Wait a minute... I do
-        have{" "}
+        you have TikTok? Lesedi why don't you have Twitter? Wait a minute... I
+        do have{" "}
         <a
           href="https://www.twitter.com/LVMolemi"
           target="_blank"
+          rel="noopener noreferrer"
           className="underline"
         >
           Twitter
-        </a>.
+        </a>
+        .
       </p>
       <div className="flex flex-wrap mt-6">
         <SocialLink

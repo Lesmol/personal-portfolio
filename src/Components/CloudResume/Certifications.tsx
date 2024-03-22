@@ -12,6 +12,7 @@ function Certifications() {
         <a
           href="https://www.credly.com/badges/98db8c21-98c4-451f-8829-74790b9ede94/public_url"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"
@@ -22,6 +23,7 @@ function Certifications() {
         <a
           href="https://www.credly.com/badges/152a6284-5b81-43a2-9b2c-16297c692dbe/public_url"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"
@@ -32,6 +34,7 @@ function Certifications() {
         <a
           href="https://www.credly.com/badges/da58d75c-1055-4a1f-a422-2f625952d9be/public_url"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"
@@ -42,6 +45,7 @@ function Certifications() {
         <a
           href="https://www.credly.com/badges/25e831bb-1b3e-4f12-a12f-f6596ab42d50/public_url"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"
@@ -52,6 +56,7 @@ function Certifications() {
         <a
           href="https://www.credly.com/badges/6f5716bb-7607-440b-bd16-c3c5e608f4fd/public_url"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"

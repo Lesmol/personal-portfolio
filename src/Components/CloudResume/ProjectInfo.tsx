@@ -12,6 +12,7 @@ function ProjectInfo(props: ProjectInfoProps) {
         <a
           href={props.link}
           target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center hover:text-primary transition 150 ease-out"
         >
           <svg
