@@ -10,7 +10,7 @@ function ArticleItem(props: Props) {
         href={props.link}
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-primary"
+        className="md:hover:text-primary"
       >
         <span className=" mr-2">&#x2197;</span>
         {props.title}

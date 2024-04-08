@@ -5,7 +5,7 @@ type ProjectItemProps = {
 
 function LinkItem(props: ProjectItemProps) {
   return (
-    <div className="flex items-center mt-2 ml-4 hover:text-darker-primary transition 150 ease-out">
+    <div className="flex items-center mt-2 ml-4 md:hover:text-darker-primary transition 150 ease-out">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="35"

@@ -11,7 +11,7 @@ function SocialLink(props: SocialLinkProps) {
       href={props.href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex px-2 py-1 items-center border border-darker-primary w-[100%] max-w-[460px] rounded-md mb-3 hover:bg-text-darker-primary transition ease-linear 15"
+      className="flex px-2 py-1 items-center border border-darker-primary w-[100%] max-w-[460px] rounded-md mb-3 md:hover:bg-text-darker-primary transition ease-linear 15"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

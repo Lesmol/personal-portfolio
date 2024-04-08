@@ -11,7 +11,7 @@ function Link(props: LinkProps) {
       target="_blank"
       href={props.link}
       rel="noopener noreferrer"
-      className="flex items-end mb-2 hover:text-primary transition 15 ease-out"
+      className="flex items-end mb-2 md:hover:text-primary transition 15 ease-out"
     >
       <img
         src={props.imagePath}
