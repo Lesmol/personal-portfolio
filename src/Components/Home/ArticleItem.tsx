@@ -1,19 +1,18 @@
 type Props = {
   title: string;
   link: string;
-  date: string;
 };
 
 function ArticleItem(props: Props) {
   return (
-    <div className="items-center mt-4 md:space-x-3 md:flex md:flex-row-reverse">
-      <p className="text-darker-primary w-[180px]">{props.date}</p>
+    <div className="mb-4 md:mb-3">
       <a
         href={props.link}
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-primary"
+        className="md:hover:text-primary"
       >
+        <span className="mr-2">&#x2197;</span>
         {props.title}
       </a>
     </div>
