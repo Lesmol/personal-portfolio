@@ -6,7 +6,7 @@ export default {
       colors: {
         primary: "#a0a0a0",
         "darker-primary": "#616161",
-        background: "#292929",
+        background: "#1E1E1E",
       },
       screens: {
         sm: "480px",
@@ -15,9 +15,9 @@ export default {
         xl: "1440px",
       },
       backgroundColor: {
-        primary: "#292929",
-        "text-darker-primary": "#616161",
-        secondary: "#1e1e1e",
+        primary: "#1E1E1E",
+        "text-darker-primary": "#2D2D2D",
+        secondary: "#181818",
         light: "#E9E9E9",
       },
     },

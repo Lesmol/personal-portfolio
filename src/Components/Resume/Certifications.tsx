@@ -1,8 +1,8 @@
-import AzureDeveloper from "../../assets/Image/azure_developer.png";
-import AzureFundamentals from "../../assets/Image/azure_data_fundamentals.png";
-import ITSpecialist_HTML_CSS from "../../assets/Image/certiport_html_css.png";
-import ITSpecialist_JavaScript from "../../assets/Image/javascript.png";
-import Python from "../../assets/Image/python.png";
+import AzureDeveloper from "../../../public/Image/azure_developer.png";
+import AzureFundamentals from "../../../public/Image/azure_data_fundamentals.png";
+import ITSpecialist_HTML_CSS from "../../../public/Image/certiport_html_css.png";
+import ITSpecialist_JavaScript from "../../../public/Image/javascript.png";
+import Python from "../../../public/Image/python.png";
 
 function Certifications() {
   return (
