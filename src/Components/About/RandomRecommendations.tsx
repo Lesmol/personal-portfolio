@@ -1,9 +1,9 @@
-import milk_road from "../../assets/Image/milk_road.png";
-import google from "../../assets/Image/google.jpg";
-import paul_buchheit from "../../assets/Image/paul_buchheit.jpg";
-import paul_graham from "../../assets/Image/paul_graham.jpg";
-import founders from "../../assets/Image/founders.jpeg";
-import naval from "../../assets/Image/naval_ravikant.jpg";
+import milk_road from "../../../public/Image/milk_road.png";
+import google from "../../../public/Image/google.jpg";
+import paul_buchheit from "../../../public/Image/paul_buchheit.jpg";
+import paul_graham from "../../../public/Image/paul_graham.jpg";
+import founders from "../../../public/Image/founders.jpeg";
+import naval from "../../../public/Image/naval_ravikant.jpg";
 import Link from "./Link";
 
 function RandomLinks() {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import LMLogo from "../assets/SVG/logo.svg";
+import LMLogo from "../../public/SVG/logo.svg";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 

@@ -1,8 +1,8 @@
 import Images from "./Images";
 
-import sister from "../../assets/Image/sister.jpg";
-import south_africa from "../../assets/Image/south_africa.png";
-import race from "../../assets/Image/race.jpeg";
+import sister from "../../../public/Image/sister.jpg";
+import south_africa from "../../../public/Image/south_africa.png";
+import race from "../../../public/Image/race.jpeg";
 
 function TopSection() {
   return (

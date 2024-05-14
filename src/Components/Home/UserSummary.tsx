@@ -1,4 +1,4 @@
-import userImage from "../../assets/Image/me_2.png";
+import userImage from "/Image/me_2.png";
 
 function UserSummary() {
   return (
