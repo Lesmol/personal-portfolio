@@ -32,7 +32,7 @@ function CloudResume() {
         <Education
           title="CTU Training Solutions - Pretoria"
           duration="2022-Present"
-          description="I am going into my 3rd year, specialising in Big Data Analytics 
+          description="I'm in my final year, specialising in Big Data Analytics 
           to earn my Information Technology: Database Development qualification."
         />
       </motion.div>

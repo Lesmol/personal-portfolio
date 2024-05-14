@@ -6,7 +6,7 @@ export default {
       colors: {
         primary: "#a0a0a0",
         "darker-primary": "#616161",
-        background: "#292929",
+        background: "#1E1E1E",
       },
       screens: {
         sm: "480px",

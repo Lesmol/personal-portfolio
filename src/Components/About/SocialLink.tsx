@@ -11,19 +11,18 @@ function SocialLink(props: SocialLinkProps) {
       href={props.href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex px-2 py-1 items-center border border-darker-primary w-[100%] max-w-[460px] rounded-md mb-3 md:hover:bg-text-darker-primary transition ease-linear 15"
+      className="flex px-4 py-3 items-center bg-primary rounded-md mb-3 md:hover:bg-text-darker-primary transition ease-linear 15"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
+        width="26"
+        height="26"
         fill="currentColor"
         className={props.className}
         viewBox="0 0 16 16"
       >
         <path d={props.d} />
       </svg>
-      <p className="ml-4 text-lg">{props.title}</p>
     </a>
   );
 }

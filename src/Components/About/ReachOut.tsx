@@ -18,7 +18,7 @@ function ReachOut() {
         </a>
         .
       </p>
-      <div className="flex flex-wrap mt-6">
+      <div className="flex space-x-3 flex-wrap mt-6">
         <SocialLink
           title="Email"
           href="mailto:molemilesedi@gmail.com"
