@@ -1,10 +1,10 @@
 function About() {
   return (
     <p className="mt-12 text-center">
-      Hi, I'm Lesedi Molemi, a Software Developer who loves learning new
-      technologies. In just 3 years, I have managed to learn a wide range of
-      technologies that allow me to build onto the internet and leave my little
-      dent on the universe.
+      Hi, I'm a Software Developer who builds for the web on the front and
+      backend as well as the infrastructure using Terraform and Azure as my
+      cloud provider of choice. As a matter of fact, this website is hosted on
+      Azure.
     </p>
   );
 }

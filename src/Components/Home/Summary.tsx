@@ -1,13 +1,13 @@
-import userImage from "/Image/me_2.png";
+import userImage from "/Image/me.png";
 
-function UserSummary() {
+function Summary() {
   return (
     <>
       <div>
         <div className="flex mt-12 justify-center">
           <div>
             <img
-              className="w-[70px] rounded-full"
+              className="w-[50px] rounded-full"
               src={userImage}
               alt="An image of Lesedi Molemi"
             />
@@ -15,7 +15,7 @@ function UserSummary() {
           <div className="ml-2">
             <div className="text-4xl">Lesedi Molemi</div>
             <div className="text-sm text-primary">
-              I write code and read books.
+              Software & Cloud Developer
             </div>
           </div>
         </div>
@@ -55,4 +55,4 @@ function UserSummary() {
   );
 }
 
-export default UserSummary;
+export default Summary;

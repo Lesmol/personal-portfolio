@@ -1,6 +1,6 @@
 import Home from "./UI/Home";
 import { Route, Routes } from "react-router-dom";
-import CloudResume from "./UI/CloudResume";
+import CloudResume from "./UI/Resume";
 import AboutPage from "./UI/AboutPage";
 
 function App() {

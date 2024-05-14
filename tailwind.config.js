@@ -15,9 +15,9 @@ export default {
         xl: "1440px",
       },
       backgroundColor: {
-        primary: "#292929",
+        primary: "#1E1E1E",
         "text-darker-primary": "#616161",
-        secondary: "#1e1e1e",
+        secondary: "#181818",
         light: "#E9E9E9",
       },
     },

@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <div className="max-w-lg mx-auto">
-      <nav className="flex justify-between items-center mt-4">
+      <nav className="flex justify-between items-center mt-4 bg-primary py-4 px-6 rounded-full">
         <Link to={"/"}>
           <img src={LMLogo} alt="The letters LM written in a stylish font." className="md: w-14" />
         </Link>
@@ -26,7 +26,7 @@ function Navbar() {
           <li>
             <Link
               to={"/about"}
-              className="ml-8 text-primary hover:text-darker-primary transition 150 ease-in-out"
+              className="ml-8 text-primary font-medium hover:text-white transition 150 ease-in-out"
             >
               About
             </Link>
@@ -34,7 +34,7 @@ function Navbar() {
           <li>
             <Link
               to={"/resume"}
-              className="ml-8 text-primary hover:text-darker-primary transition 150 ease-in-out"
+              className="ml-8 text-primary font-medium hover:text-white transition 150 ease-in-out"
             >
               Resume
             </Link>

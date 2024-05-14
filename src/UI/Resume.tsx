@@ -1,10 +1,10 @@
 import Navbar from "../Components/Navbar";
-import ResumeHeader from "../Components/CloudResume/ResumeHeader";
-import Project from "../Components/CloudResume/Project";
-import Education from "../Components/CloudResume/Education";
+import ResumeHeader from "../Components/Resume/ResumeHeader";
+import Project from "../Components/Resume/Project";
+import Education from "../Components/Resume/Education";
 
 import { motion } from "framer-motion";
-import Certifications from "../Components/CloudResume/Certifications";
+import Certifications from "../Components/Resume/Certifications";
 
 function CloudResume() {
   return (
