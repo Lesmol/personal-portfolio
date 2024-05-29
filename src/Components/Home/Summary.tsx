@@ -1,5 +1,3 @@
-import userImage from "/Image/me.png";
-
 function Summary() {
   return (
     <>
@@ -8,7 +6,7 @@ function Summary() {
           <div>
             <img
               className="w-[50px] rounded-full"
-              src={userImage}
+              src="https://cloudresumeresources.blob.core.windows.net/resumeimages/me_remove.png"
               alt="An image of Lesedi Molemi"
             />
           </div>

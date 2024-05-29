@@ -1,18 +1,24 @@
 import Images from "./Images";
 
-import sister from "../../../public/Image/sister.jpg";
-import south_africa from "../../../public/Image/south_africa.png";
-import race from "../../../public/Image/race.jpeg";
-
 function TopSection() {
   return (
     <div className="mt-8">
       <h1 className="text-3xl font-bold">About Me</h1>
       <p className="text-primary">Have a little look.</p>
       <div className="flex justify-between mt-4">
-        <Images src={race} alt="Go karting with friends"/>
-        <Images src={sister} alt="A picture of me and my sister"/>
-        <Images src={south_africa} alt="The South African flag on the Burg Khalifa" hidden={true}/>
+        <Images
+          src="https://cloudresumeresources.blob.core.windows.net/resumeimages/race.jpeg"
+          alt="Go karting with friends"
+        />
+        <Images
+          src="https://cloudresumeresources.blob.core.windows.net/resumeimages/sister.jpg"
+          alt="A picture of me and my sister"
+        />
+        <Images
+          src="https://cloudresumeresources.blob.core.windows.net/resumeimages/south_africa.png"
+          alt="The South African flag on the Burg Khalifa"
+          hidden={true}
+        />
       </div>
     </div>
   );

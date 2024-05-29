@@ -1,9 +1,3 @@
-import AzureDeveloper from "../../../public/Image/azure_developer.png";
-import AzureFundamentals from "../../../public/Image/azure_data_fundamentals.png";
-import ITSpecialist_HTML_CSS from "../../../public/Image/certiport_html_css.png";
-import ITSpecialist_JavaScript from "../../../public/Image/javascript.png";
-import Python from "../../../public/Image/python.png";
-
 function Certifications() {
   return (
     <div className="mt-12">
@@ -16,7 +10,7 @@ function Certifications() {
         >
           <img
             className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"
-            src={Python}
+            src="https://images.credly.com/size/340x340/images/02385bfc-b8e3-46b0-a005-c4c354eff100/image.png"
             alt="Python Certiport Certification"
           />
         </a>
@@ -27,7 +21,7 @@ function Certifications() {
         >
           <img
             className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"
-            src={AzureFundamentals}
+            src="https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png"
             alt="Azure Fundametals Certification"
           />
         </a>
@@ -38,7 +32,7 @@ function Certifications() {
         >
           <img
             className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"
-            src={AzureDeveloper}
+            src="https://images.credly.com/size/340x340/images/63316b60-f62d-4e51-aacc-c23cb850089c/azure-developer-associate-600x600.png"
             alt="Azure Developer Certification"
           />
         </a>
@@ -49,7 +43,7 @@ function Certifications() {
         >
           <img
             className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"
-            src={ITSpecialist_HTML_CSS}
+            src="https://images.credly.com/size/340x340/images/e2dc688d-de61-44a5-81af-ee96f117a211/ITS-Badges_HTML-and-CSS_1200px.png"
             alt="HTML & CSS IT Specialist Certification"
           />
         </a>
@@ -60,7 +54,7 @@ function Certifications() {
         >
           <img
             className="w-[140px] lg:grayscale hover:grayscale-0 transition 300 ease-in-out"
-            src={ITSpecialist_JavaScript}
+            src="https://images.credly.com/size/340x340/images/ef99b79e-fd54-4eb5-b2a4-bf17e92a4837/ITS-Badges_JavaScript_1200px.png"
             alt="JavaScript IT Specialist Certification"
           />
         </a>

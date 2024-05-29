@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import LMLogo from "../../public/SVG/logo.svg";
+import LMLogo from "/SVG/logo.svg";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -16,7 +16,7 @@ function Navbar() {
       <nav className="flex justify-between items-center mt-4 bg-primary py-4 px-6 rounded-full">
         <Link to={"/"}>
           <img
-            src={LMLogo}
+            src="https://cloudresumeresources.blob.core.windows.net/resumeimages/logo.svg"
             alt="The letters LM written in a stylish font."
             className="md: w-14"
           />
