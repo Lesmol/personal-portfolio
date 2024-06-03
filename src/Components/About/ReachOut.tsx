@@ -2,7 +2,7 @@ import SocialLink from "./SocialLink";
 
 function ReachOut() {
   return (
-    <div className="mt-10">
+    <div className="mt-10 max-w-screen-sm">
       <h1 className="text-xl text-primary">Reach out</h1>
       <p>
         I know, I know. Lesedi why don't you have Instagram? Lesedi why don't

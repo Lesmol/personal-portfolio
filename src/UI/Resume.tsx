@@ -5,8 +5,17 @@ import Education from "../Components/Resume/Education";
 
 import { motion } from "framer-motion";
 import Certifications from "../Components/Resume/Certifications";
+import { useEffect } from "react";
 
 function CloudResume() {
+  useEffect(() => {
+    document.title = "Lesedi Molemi | Resume";
+
+    return () => {
+      document.title = "Lesedi Molemi";
+    };
+  }, []);
+
   return (
     <div className="container mx-auto max-w-2xl items-center">
       <Navbar />
@@ -30,10 +39,9 @@ function CloudResume() {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <Education
-          title="CTU Training Solutions - Pretoria"
-          duration="2022-Present"
-          description="I'm in my final year, specialising in Big Data Analytics 
-          to earn my Information Technology: Database Development qualification."
+          title="CTU Training Solutions"
+          duration="2022 -"
+          description="IT Systems Development"
         />
       </motion.div>
       <motion.div

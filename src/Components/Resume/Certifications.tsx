@@ -2,7 +2,7 @@ function Certifications() {
   return (
     <div className="mt-12">
       <h1 className="font-bold text-2xl text-primary">Certifications</h1>
-      <div className="ml-8 mt-3 flex flex-wrap space-x-3">
+      <div className="ml-8 mt-3 mx-auto flex flex-wrap">
         <a
           href="https://www.credly.com/badges/98db8c21-98c4-451f-8829-74790b9ede94/public_url"
           target="_blank"

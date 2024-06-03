@@ -57,21 +57,21 @@ function Navbar() {
       <AnimatePresence>
         {mobileNav ? (
           <motion.div
-            className="fixed right-5 mt-2 backdrop-blur-sm bg-black w-[250px] rounded-lg sm:hidden"
+            className="fixed right-5 mt-1 backdrop-blur-sm bg-black w-36 rounded-lg sm:hidden"
             initial={{ y: -5, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -5, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
             <Link to={"/"}>
-              <div className="text-xl py-2 px-4 ">Home</div>
+              <div className="py-2 px-4">Home</div>
             </Link>
 
             <Link to={"/about"}>
-              <div className="text-xl py-1 px-4 ">About</div>
+              <div className="py-1 px-4">About</div>
             </Link>
             <Link to={"/resume"}>
-              <div className="text-xl py-2 px-4 ">Resume</div>
+              <div className="py-2 px-4">Resume</div>
             </Link>
           </motion.div>
         ) : null}

@@ -16,7 +16,7 @@ function Project() {
       <ProjectInfo
         title="Techspo Site"
         link="https://github.com/Lesmol/Techspo_Website"
-        stack="Azure SQL Database | ASP.NET | C#"
+        stack="Azure SQL Database | ASP.NET Core | C#"
         description="This responsive MVC application was developed using ASP.NET, the C# framework. Additionally, I designed 
         some of the application's assets with Figma to ensure they match the website's theme. 
         I used Azure for the database server and web hosting. Using Azure for the database 

@@ -4,8 +4,17 @@ import Description from "../Components/About/Description";
 import ReachOut from "../Components/About/ReachOut";
 
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 function About() {
+  useEffect(() => {
+    document.title = "Lesedi Molemi | About";
+
+    return () => {
+      document.title = "Lesedi Molemi";
+    };
+  }, []);
+
   return (
     <div className="container mx-auto max-w-2xl items-center">
       <Navbar />
