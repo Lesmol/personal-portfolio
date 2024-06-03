@@ -16,7 +16,7 @@ function Education(props: EducationProps) {
             className="rounded-full w-10"
           />
           <div className="">
-            <h1 className="text-lg m-0 p-0 font-medium">{props.title}</h1>
+            <h1 className="m-0 p-0 font-bold">{props.title}</h1>
             <p className="text-primary font-light">{props.description}</p>
           </div>
         </div>
