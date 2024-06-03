@@ -100,7 +100,7 @@ describe("Navbar user interactions", () => {
     //expect the about me text to show since we are on the about page
     expect(
       screen.getByRole("heading", {
-        name: /ctu training solutions \- pretoria/i,
+        name: /molemilesedi@gmail\.com/i,
       })
     ).toBeInTheDocument();
   });
