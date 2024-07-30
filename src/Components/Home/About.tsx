@@ -1,11 +1,13 @@
 function About() {
   return (
-    <p className="mt-12 text-center">
-      Hi, I'm a Software Developer who builds web frontends, backends and
-      infrastructure using Terraform and Azure as my cloud provider of choice.
-      As a matter of fact, this very website is built on Azure. I do all of this
-      to leave my little dent in the world.
-    </p>
+    <>
+      <h2 className="mt-12 text-2xl font-bold">hi, I'm Lesedi...</h2>
+      <p className="mt-2 text-left">
+        A Software Developer who builds web frontends, backends, and
+        infrastructure using Terraform and Azure as my cloud provider of choice,
+        and Azure DevOps or GitHub Actions for the CI/CD.
+      </p>
+    </>
   );
 }
 
