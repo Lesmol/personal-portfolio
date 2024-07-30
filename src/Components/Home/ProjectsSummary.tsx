@@ -5,7 +5,7 @@ function ProjectsSummary() {
     <div className="mt-8">
       <h3 className="text-xl mb-1">Projects</h3>
       <p className="text-primary mb-4">
-        Public repo's of projects I am either working on or have worked on.
+        Public repo's of projects I'm either working on or completed.
       </p>
       <LinkItem
         title="Cloud Resume Challenge"

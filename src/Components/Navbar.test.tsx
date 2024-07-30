@@ -61,8 +61,8 @@ describe("Navbar user interactions", () => {
 
     // verify page content for default route
     expect(
-      screen.getByRole("img", {
-        name: /an image of lesedi molemi/i,
+      screen.getByRole('heading', {
+        name: /hi, i'm lesedi\.\.\./i
       })
     ).toBeInTheDocument();
 

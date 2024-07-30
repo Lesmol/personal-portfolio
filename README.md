@@ -11,7 +11,7 @@ On each push to the main branch GitHub Actions is fired and the workflow at /.gi
 Like any project, there is always something to improve:
 
 - Add a "Blogs" page
-- Minor UI/UX upgrades
+- Continuos minor UI/UX upgrades
 - Migrating to Next.js
 - Adding modal features to my Menu pane
 
