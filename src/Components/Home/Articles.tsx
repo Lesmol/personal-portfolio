@@ -9,6 +9,10 @@ function Articles() {
         Check it out if you're interested...
       </p>
       <ArticleItem
+        title="How I keep my Azure bill under $0.01"
+        link="https://www.linkedin.com/pulse/how-i-keep-my-azure-bill-under-001-lesedi-molemi-phsrf/?trackingId=NMzQD6jwSJ6WB%2F2xVs%2FotQ%3D%3D"
+      />
+      <ArticleItem
         title="What we did wrong in this project: PHP, Tailwind, Git & GitHub"
         link="https://www.linkedin.com/pulse/what-we-did-wrong-project-php-tailwind-git-github-lesedi-molemi-u3pgf/?trackingId=mjMULJOQSauumFJuQBEADw%3D%3D"
       />

@@ -4,10 +4,15 @@ on:
   push:
     branches:
       - main
+    paths-ignore: 
+      - README.md
+      
   pull_request:
     types: [synchronize]
     branches:
       - main
+    paths-ignore: 
+      - README.md
 
 jobs:
   test:
