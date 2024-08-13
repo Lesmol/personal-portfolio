@@ -4,7 +4,7 @@ function ProjectsSummary() {
   return (
     <div className="mt-8">
       <h3 className="text-xl mb-1">Projects</h3>
-      <p className="text-primary mb-4">
+      <p className="text-primary text-sm mb-4">
         Public repo's of projects I'm either working on or completed.
       </p>
       <LinkItem

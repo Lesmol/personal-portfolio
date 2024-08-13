@@ -17,7 +17,7 @@ function Project() {
       <ProjectInfo
         title="Next.js Frontend with .NET Core Minimal API Backend"
         link="https://github.com/Lesmol/zupi-site"
-        stack="Azure SQL Database | ASP.NET Core | C#"
+        stack="Next.js | Azure SQL Database | Minimal API | C#"
         description={[
           "Designed and deployed scalable Azure infrastructure using Terraform for IaC and implemented Azure Pipelines for CI/CD, enhancing infrastructure deployment efficiency and reliability.",
           "Developed a streamlined backend API using Minimal API architecture, significantly reducing boilerplate code and accelerating development time while maintaining high performance.",

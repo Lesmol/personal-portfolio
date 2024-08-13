@@ -4,7 +4,7 @@ function Articles() {
   return (
     <div className="mt-12">
       <h3 className="text-xl mb-1">Latest posts</h3>
-      <p className="text-primary mb-4">
+      <p className="text-primary text-sm mb-4">
         I occasionally write about things I've done on my LinkedIn Articles.
         Check it out if you're interested...
       </p>
