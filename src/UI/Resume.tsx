@@ -1,11 +1,12 @@
 import Navbar from "../Components/Navbar";
 import ResumeHeader from "../Components/Resume/ResumeHeader";
 import Project from "../Components/Resume/Project";
-import Education from "../Components/Resume/Education";
 
 import { motion } from "framer-motion";
 import Certifications from "../Components/Resume/Certifications";
 import { useEffect } from "react";
+import SummaryPane from "../Components/Resume/Education";
+import Education from "../Components/Resume/Education";
 
 function CloudResume() {
   useEffect(() => {
@@ -38,11 +39,7 @@ function CloudResume() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <Education
-          title="CTU Training Solutions"
-          duration="2022 -"
-          description="IT Systems Development"
-        />
+        <Education />
       </motion.div>
       <motion.div
         initial={{ y: 20, opacity: 0 }}
