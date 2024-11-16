@@ -3,9 +3,9 @@ function About() {
     <>
       <h2 className="mt-12 text-2xl font-bold">hi, I'm Lesedi...</h2>
       <p className="mt-2 text-left">
-        A Software Developer who builds web frontends, backends, and
-        infrastructure using Terraform and Azure as my cloud provider of choice,
-        and Azure DevOps or GitHub Actions for the CI/CD.
+        A Support Specialist at Capitec Business Bank where I work to solve
+        client issues and collaborate with development and operations teams to
+        monitor critical business banking infrastructure.
       </p>
     </>
   );

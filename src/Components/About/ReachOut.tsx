@@ -5,8 +5,8 @@ function ReachOut() {
     <div className="mt-10 max-w-screen-sm">
       <h1 className="text-xl">Reach out</h1>
       <p className="text-primary text-sm mb-4">
-        I always look forward to meeting new people, so you can say "Hi" any time
-        or day!
+        I always look forward to meeting new people, so you can say "Hi" any
+        time or day!
       </p>
       <div className="flex space-x-3 flex-wrap mt-3">
         <SocialLink

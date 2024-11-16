@@ -5,6 +5,7 @@ import ReachOut from "../Components/About/ReachOut";
 
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import Experience from "../Components/About/Experience";
 
 function About() {
   useEffect(() => {
@@ -38,6 +39,13 @@ function About() {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <ReachOut />
+      </motion.div>
+      <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+      >
+        <Experience />
       </motion.div>
     </div>
   );
