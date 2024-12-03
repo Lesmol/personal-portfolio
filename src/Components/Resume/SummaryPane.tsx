@@ -9,7 +9,7 @@ type SummaryPaneProps = {
 
 function SummaryPane(props: SummaryPaneProps) {
   return (
-    <a href={props.institutionUrl} className="block">
+    <a href={props.institutionUrl} target="_blank" className="block">
       <div className="mt-3 mx-auto justify-between w-full max-w-[570px] items-center flex">
         <div className="flex space-x-3 w-96 items-center">
           <img
