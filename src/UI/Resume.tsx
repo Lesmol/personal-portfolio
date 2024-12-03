@@ -5,7 +5,6 @@ import Project from "../Components/Resume/Project";
 import { motion } from "framer-motion";
 import Certifications from "../Components/Resume/Certifications";
 import { useEffect } from "react";
-import SummaryPane from "../Components/Resume/Education";
 import Education from "../Components/Resume/Education";
 
 function CloudResume() {
