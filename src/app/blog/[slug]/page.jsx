@@ -28,7 +28,7 @@ async function page({ params }) {
   const htmlContent = md.render(post.content);
 
   return (
-    <div className="mx-auto max-w-3xl p-4">
+    <div className="mx-auto max-w-3xl p-4 md:p-0 md:pb-4">
       <Navbar />
       <article className="mt-8">
         <img src={post.imgUrl} alt={post.alt} className="w-full" />
