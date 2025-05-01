@@ -24,7 +24,7 @@ function blogPosts() {
               <img
                 src={post.imgUrl}
                 alt=""
-                className="mb-2 h-full w-full object-cover transition duration-300 ease-in-out md:mb-0 md:group-hover:scale-110"
+                className="mb-2 h-full w-full object-cover transition duration-300 ease-in-out md:mb-0 md:group-hover:scale-105"
               />
             </div>
             <div className="md:w-[500px]">
