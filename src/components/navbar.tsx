@@ -38,7 +38,7 @@ function Navbar() {
           </li>
           <li>
             <Link
-              href="/blogPosts"
+              href="/blog"
               className="150 ml-8 font-medium text-primary transition ease-in-out hover:text-white"
             >
               Blog
@@ -91,7 +91,7 @@ function Navbar() {
           viewBox="0 0 16 16"
         >
           <path
-            fill-rule="evenodd"
+            fillRule="evenodd"
             d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"
           />
         </svg>
@@ -196,7 +196,7 @@ function Navbar() {
               </div>
             </Link>
             <Link
-              href="/blogPosts"
+              href="/blog"
               className="m-2 flex items-center space-x-2 rounded-xl bg-darker-primary px-1 py-2"
             >
               <div className="rounded-xl bg-primary p-3 font-bold text-primary">
