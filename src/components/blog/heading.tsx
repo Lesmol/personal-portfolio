@@ -10,7 +10,7 @@ function heading() {
         </span>
       </h1>
       <div className="mb-12 text-primary">
-        Topics I'm interested in with a dash of experimentation and
+        Topics I&apos;m interested in with a dash of experimentation and
         self-reflection sprinkled into the mix.
       </div>
     </>

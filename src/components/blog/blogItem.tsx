@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 type Props = {
@@ -14,7 +15,7 @@ function BlogItem(props: Props) {
     <a href={props.BlogPath} className="group">
       <div className="mb-12 w-fit justify-between sm:mx-auto md:flex md:flex-row-reverse">
         <div className="w-full max-w-lg overflow-clip rounded md:ml-2 md:max-w-40">
-          <img
+          <Image
             src={props.ImageUrl}
             alt={props.ImageAlt}
             className="mb-2 h-full w-full object-cover transition duration-300 ease-in-out md:mb-0 md:group-hover:scale-105"
