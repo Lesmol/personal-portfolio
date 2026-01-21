@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio - Lesedi Molemi
+# 🌐 Personal Portfolio
 
 This repository contains the source code for my personal portfolio website. Built with the latest web technologies, it serves as a central hub for my professional experience, blog posts, and project showcases.
 
