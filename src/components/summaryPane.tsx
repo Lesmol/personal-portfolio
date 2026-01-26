@@ -16,6 +16,8 @@ function summaryPane(props: SummaryPaneProps) {
       <div className="mx-auto mt-3 flex w-full max-w-[570px] items-center justify-between">
         <div className="flex w-96 items-center space-x-3">
           <Image
+            width={0}
+            height={0}
             src={props.imageUrl}
             alt={props.imageAlt}
             className="w-12 rounded-full"
