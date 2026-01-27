@@ -67,7 +67,7 @@ function Navbar() {
                 width="16"
                 height="16"
                 fill="currentColor"
-                className={`bi bi-arrow-down-short ${moreNav ? "transtion rotate-180 duration-150" : "transtion -rotate-0 duration-150"}`}
+                className={`bi bi-arrow-down-short ${moreNav ? "transtion rotate-180 duration-150" : "transtion rotate-0 duration-150"}`}
                 viewBox="0 0 16 16"
               >
                 <path
@@ -90,7 +90,7 @@ function Navbar() {
           width="16"
           height="16"
           fill="currentColor"
-          className={`bi bi-arrow-down-short ${mobileNav ? "transtion rotate-180 duration-150" : "transtion -rotate-0 duration-150"}`}
+          className={`bi bi-arrow-down-short ${mobileNav ? "transtion rotate-180 duration-150" : "transtion rotate-0 duration-150"}`}
           viewBox="0 0 16 16"
         >
           <path
@@ -110,7 +110,7 @@ function Navbar() {
             exit={{ y: -5, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="max-w-2/4 mx-auto flex h-60 w-fit max-w-screen-md justify-center space-x-2 rounded-xl bg-primary/90 p-4 text-lg backdrop-blur-sm">
+            <div className="max-w-2/4 mx-auto flex h-60 w-fit justify-center space-x-2 rounded-xl bg-primary/90 p-4 text-lg backdrop-blur-sm">
               <div className="group relative aspect-square overflow-clip rounded-xl">
                 <Image
                   width={0}
