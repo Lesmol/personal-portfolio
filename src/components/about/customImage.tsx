@@ -9,12 +9,10 @@ interface CustomImageProps {
 
 function customImage(props: CustomImageProps) {
   return (
-    <Image
-      width={0}
-      height={0}
+    <img
       src={props.src}
       alt={props.alt}
-      className={`h-[25%] w-[45%] rounded-2xl object-cover md:h-[250px] md:w-[200px] ${
+      className={`h-[25%] w-[45%] rounded-2xl object-cover md:h-62.5 md:w-50 ${
         !props.hidden ? "" : "hidden md:block"
       }`}
     />

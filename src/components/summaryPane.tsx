@@ -13,11 +13,9 @@ interface SummaryPaneProps {
 function summaryPane(props: SummaryPaneProps) {
   return (
     <a href={props.institutionUrl} target="_blank" className="block">
-      <div className="mx-auto mt-3 flex w-full max-w-[570px] items-center justify-between">
+      <div className="mx-auto mt-3 flex w-full max-w-142.5 items-center justify-between">
         <div className="flex w-96 items-center space-x-3">
-          <Image
-            width={0}
-            height={0}
+          <img
             src={props.imageUrl}
             alt={props.imageAlt}
             className="w-12 rounded-full"

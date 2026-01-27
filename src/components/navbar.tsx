@@ -21,9 +21,7 @@ function Navbar() {
     <div className="flex max-w-xl justify-end sm:mx-auto sm:block">
       <nav className="mt-4 hidden items-center justify-between rounded-3xl bg-primary px-6 py-4 sm:flex">
         <Link href="/">
-          <Image
-            width={0}
-            height={0}
+          <img
             src="https://cloudresumeresources.blob.core.windows.net/resumeimages/logo.svg"
             alt="The letters LM written in a stylish font."
             className="md: w-14"
@@ -112,9 +110,7 @@ function Navbar() {
           >
             <div className="max-w-2/4 mx-auto flex h-60 w-fit justify-center space-x-2 rounded-xl bg-primary/90 p-4 text-lg backdrop-blur-sm">
               <div className="group relative aspect-square overflow-clip rounded-xl">
-                <Image
-                  width={0}
-                  height={0}
+                <img
                   src="https://cloudresumeresources.blob.core.windows.net/resumeimages/random-gun.jpeg"
                   alt="Lesedi Molemi smiling with a bag of fruit"
                   className="h-full w-full object-cover brightness-50 transition duration-300 ease-out group-hover:brightness-75 md:hover:scale-105"
@@ -124,9 +120,7 @@ function Navbar() {
                 </div>
               </div>
               <div className="group relative hidden aspect-square overflow-clip rounded-xl md:block">
-                <Image
-                  width={0}
-                  height={0}
+                <img
                   src="https://cloudresumeresources.blob.core.windows.net/resumeimages/melrose-lunch.jpeg"
                   alt="Lunch at Melrose Arch"
                   className="h-full w-full object-cover brightness-50 transition duration-300 ease-out group-hover:brightness-75 md:hover:scale-105"
@@ -136,9 +130,7 @@ function Navbar() {
                 </div>
               </div>
               <div className="group relative aspect-square overflow-clip rounded-xl">
-                <Image
-                  width={0}
-                  height={0}
+                <img
                   src="https://cloudresumeresources.blob.core.windows.net/resumeimages/picking-fruit.jpeg"
                   alt="Lesedi Molemi smiling with a bag of fruit"
                   className="h-full w-full object-cover brightness-50 transition duration-300 ease-out group-hover:brightness-75 md:hover:scale-105"
