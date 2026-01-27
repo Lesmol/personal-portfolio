@@ -5,7 +5,7 @@ function heading() {
     <>
       <h1 className="mb-2 mt-14 text-5xl font-bold">
         My{" "}
-        <span className="bg-gradient-to-r from-blue-400 via-blue-200 to-blue-500 bg-clip-text text-transparent">
+        <span className="bg-linear-to-r from-blue-400 via-blue-200 to-blue-500 bg-clip-text text-transparent">
           Posts
         </span>
       </h1>
