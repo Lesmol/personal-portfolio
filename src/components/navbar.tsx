@@ -22,7 +22,7 @@ function Navbar(props: NavbarProps) {
   }
 
   return (
-    <div className={`flex max-w-xl ${props.backButton ? "justify-between" : "justify-end"} sm:mx-auto sm:block`}>
+    <div className={`flex max-w-xl sm:mx-auto sm:block`}>
       <nav className="bg-primary mt-4 hidden items-center justify-between rounded-3xl px-6 py-4 sm:flex">
         <Link href="/">
           <img
@@ -85,7 +85,7 @@ function Navbar(props: NavbarProps) {
       {props.backButton ? (
         <Link
           href={props.backPath || "/"}
-          className="bg-primary text-primary left-0 mt-4 flex w-fit items-center rounded-xl px-4 py-2 text-lg sm:hidden"
+          className="bg-primary text-primary mt-4 flex w-fit items-center rounded-xl px-4 py-2 text-lg sm:hidden"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ function Navbar(props: NavbarProps) {
 
       <button
         onClick={onToggle}
-        className="bg-primary text-primary right-0 mt-4 flex w-fit items-center rounded-xl px-4 py-2 text-lg sm:hidden"
+        className="bg-primary ml-auto text-primary mt-4 flex w-fit items-center rounded-xl px-4 py-2 text-lg sm:hidden"
       >
         Menu{" "}
         <svg
@@ -174,7 +174,7 @@ function Navbar(props: NavbarProps) {
       <AnimatePresence>
         {mobileNav ? (
           <motion.div
-            className="bg-near-black/90 fixed mx-auto mt-20 w-4/5 rounded-xl text-lg backdrop-blur-sm sm:hidden"
+            className="bg-near-black/90 fixed right-8 mt-20 w-4/5 rounded-xl text-lg backdrop-blur-sm sm:hidden"
             initial={{ y: -5, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -5, opacity: 0 }}
