@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
@@ -20,7 +21,9 @@ function Navbar() {
     <div className="flex max-w-xl justify-end sm:mx-auto sm:block">
       <nav className="mt-4 hidden items-center justify-between rounded-3xl bg-primary px-6 py-4 sm:flex">
         <Link href="/">
-          <img
+          <Image
+            width={0}
+            height={0}
             src="https://cloudresumeresources.blob.core.windows.net/resumeimages/logo.svg"
             alt="The letters LM written in a stylish font."
             className="md: w-14"
@@ -38,7 +41,7 @@ function Navbar() {
           </li>
           <li>
             <Link
-              href="/blogPosts"
+              href="/blog"
               className="150 ml-8 font-medium text-primary transition ease-in-out hover:text-white"
             >
               Blog
@@ -109,7 +112,9 @@ function Navbar() {
           >
             <div className="max-w-2/4 mx-auto flex h-60 w-fit max-w-screen-md justify-center space-x-2 rounded-xl bg-primary/90 p-4 text-lg backdrop-blur-sm">
               <div className="group relative aspect-square overflow-clip rounded-xl">
-                <img
+                <Image
+                  width={0}
+                  height={0}
                   src="https://cloudresumeresources.blob.core.windows.net/resumeimages/random-gun.jpeg"
                   alt="Lesedi Molemi smiling with a bag of fruit"
                   className="h-full w-full object-cover brightness-50 transition duration-300 ease-out group-hover:brightness-75 md:hover:scale-105"
@@ -119,7 +124,9 @@ function Navbar() {
                 </div>
               </div>
               <div className="group relative hidden aspect-square overflow-clip rounded-xl md:block">
-                <img
+                <Image
+                  width={0}
+                  height={0}
                   src="https://cloudresumeresources.blob.core.windows.net/resumeimages/melrose-lunch.jpeg"
                   alt="Lunch at Melrose Arch"
                   className="h-full w-full object-cover brightness-50 transition duration-300 ease-out group-hover:brightness-75 md:hover:scale-105"
@@ -129,7 +136,9 @@ function Navbar() {
                 </div>
               </div>
               <div className="group relative aspect-square overflow-clip rounded-xl">
-                <img
+                <Image
+                  width={0}
+                  height={0}
                   src="https://cloudresumeresources.blob.core.windows.net/resumeimages/picking-fruit.jpeg"
                   alt="Lesedi Molemi smiling with a bag of fruit"
                   className="h-full w-full object-cover brightness-50 transition duration-300 ease-out group-hover:brightness-75 md:hover:scale-105"
@@ -196,7 +205,7 @@ function Navbar() {
               </div>
             </Link>
             <Link
-              href="/blogPosts"
+              href="/blog"
               className="m-2 flex items-center space-x-2 rounded-xl bg-darker-primary px-1 py-2"
             >
               <div className="rounded-xl bg-primary p-3 font-bold text-primary">
