@@ -15,12 +15,18 @@ function page() {
     <div className="container mx-auto max-w-3xl items-center p-4 md:p-0 md:pb-10">
       <Navbar />
       <div className="mt-12">
-        <h1 className="text-3xl font-bold mb-2">Projects</h1>
+        <h1 className="mt-14 mb-2 text-5xl font-bold">
+          My{" "}
+          <span className="bg-linear-to-r from-blue-400 via-blue-200 to-blue-500 bg-clip-text text-transparent">
+            Projects
+          </span>
+        </h1>
         <p className="text-custom-light-grey mb-10">
-          A collection of my recent work, experiments, and open-source contributions.
+          A collection of my recent work, experiments, and open-source
+          contributions.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {projects.map((project) => (
             <ProjectCard key={project.name} project={project} />
           ))}
