@@ -3,9 +3,13 @@ import { useState } from "react";
 
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 
-function Navbar() {
+interface NavbarProps {
+  backButton?: boolean;
+  backPath?: string;
+}
+
+function Navbar(props: NavbarProps) {
   const [mobileNav, setMobileNav] = useState(false);
   const [moreNav, setMoreNav] = useState(false);
 
@@ -18,8 +22,8 @@ function Navbar() {
   }
 
   return (
-    <div className="flex max-w-xl justify-end sm:mx-auto sm:block">
-      <nav className="mt-4 hidden items-center justify-between rounded-3xl bg-primary px-6 py-4 sm:flex">
+    <div className={`flex max-w-xl ${props.backButton ? "justify-between" : "justify-end"} sm:mx-auto sm:block`}>
+      <nav className="bg-primary mt-4 hidden items-center justify-between rounded-3xl px-6 py-4 sm:flex">
         <Link href="/">
           <img
             src="https://cloudresumeresources.blob.core.windows.net/resumeimages/logo.svg"
@@ -32,7 +36,7 @@ function Navbar() {
           <li>
             <Link
               href="/about"
-              className="150 ml-8 font-medium text-primary transition ease-in-out hover:text-white"
+              className="150 text-primary ml-8 font-medium transition ease-in-out hover:text-white"
             >
               About
             </Link>
@@ -40,7 +44,7 @@ function Navbar() {
           <li>
             <Link
               href="/blog"
-              className="150 ml-8 font-medium text-primary transition ease-in-out hover:text-white"
+              className="150 text-primary ml-8 font-medium transition ease-in-out hover:text-white"
             >
               Blog
             </Link>
@@ -48,16 +52,16 @@ function Navbar() {
           <li>
             <Link
               href="/projects"
-              className="150 ml-8 font-medium text-primary transition ease-in-out hover:text-white"
+              className="150 text-primary ml-8 font-medium transition ease-in-out hover:text-white"
             >
               Projects
             </Link>
           </li>
-          <li className="ml-4 text-darker-primary">|</li>
+          <li className="text-darker-primary ml-4">|</li>
           <li>
             <button
               onClick={onToggleMore}
-              className="ml-4 flex items-center space-x-1 font-medium text-primary transition duration-150 ease-in-out hover:text-white"
+              className="text-primary ml-4 flex items-center space-x-1 font-medium transition duration-150 ease-in-out hover:text-white"
             >
               Snapshots{" "}
               <svg
@@ -78,9 +82,31 @@ function Navbar() {
         </ul>
       </nav>
 
+      {props.backButton ? (
+        <Link
+          href={props.backPath || "/"}
+          className="bg-primary text-primary left-0 mt-4 flex w-fit items-center rounded-xl px-4 py-2 text-lg sm:hidden"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            className="bi bi-arrow-left-short"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fillRule="evenodd"
+              d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"
+            />
+          </svg>{" "}
+          Back
+        </Link>
+      ) : null}
+
       <button
         onClick={onToggle}
-        className="right-0 mt-4 flex w-fit items-center rounded-xl bg-primary px-4 py-2 text-lg text-primary sm:hidden"
+        className="bg-primary text-primary right-0 mt-4 flex w-fit items-center rounded-xl px-4 py-2 text-lg sm:hidden"
       >
         Menu{" "}
         <svg
@@ -108,7 +134,7 @@ function Navbar() {
             exit={{ y: -5, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="max-w-2/4 mx-auto flex h-60 w-fit justify-center space-x-2 rounded-xl bg-primary/90 p-4 text-lg backdrop-blur-sm">
+            <div className="bg-primary/90 mx-auto flex h-60 w-fit max-w-2/4 justify-center space-x-2 rounded-xl p-4 text-lg backdrop-blur-sm">
               <div className="group relative aspect-square overflow-clip rounded-xl">
                 <img
                   src="https://cloudresumeresources.blob.core.windows.net/resumeimages/random-gun.jpeg"
@@ -148,7 +174,7 @@ function Navbar() {
       <AnimatePresence>
         {mobileNav ? (
           <motion.div
-            className="fixed mx-auto mt-20 w-4/5 rounded-xl bg-near-black/90 text-lg backdrop-blur-sm sm:hidden"
+            className="bg-near-black/90 fixed mx-auto mt-20 w-4/5 rounded-xl text-lg backdrop-blur-sm sm:hidden"
             initial={{ y: -5, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -5, opacity: 0 }}
@@ -156,9 +182,9 @@ function Navbar() {
           >
             <Link
               href="/"
-              className="m-2 flex items-center space-x-2 rounded-xl bg-darker-primary px-1 py-2"
+              className="bg-darker-primary m-2 flex items-center space-x-2 rounded-xl px-1 py-2"
             >
-              <div className="rounded-xl bg-primary p-3 font-bold text-primary">
+              <div className="bg-primary text-primary rounded-xl p-3 font-bold">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -172,14 +198,14 @@ function Navbar() {
               </div>
               <div className="font-light">
                 <h4 className="text-sm">Home</h4>
-                <p className="text-xs text-primary">Welcome to my site!!</p>
+                <p className="text-primary text-xs">Welcome to my site!!</p>
               </div>
             </Link>
             <Link
               href="/about"
-              className="m-2 flex items-center space-x-2 rounded-xl bg-darker-primary px-1 py-2"
+              className="bg-darker-primary m-2 flex items-center space-x-2 rounded-xl px-1 py-2"
             >
-              <div className="rounded-xl bg-primary p-3 font-bold text-primary">
+              <div className="bg-primary text-primary rounded-xl p-3 font-bold">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -193,14 +219,14 @@ function Navbar() {
               </div>
               <div className="font-light">
                 <h4 className="text-sm">About</h4>
-                <p className="text-xs text-primary">A little more about me</p>
+                <p className="text-primary text-xs">A little more about me</p>
               </div>
             </Link>
             <Link
               href="/blog"
-              className="m-2 flex items-center space-x-2 rounded-xl bg-darker-primary px-1 py-2"
+              className="bg-darker-primary m-2 flex items-center space-x-2 rounded-xl px-1 py-2"
             >
-              <div className="rounded-xl bg-primary p-3 font-bold text-primary">
+              <div className="bg-primary text-primary rounded-xl p-3 font-bold">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -215,16 +241,16 @@ function Navbar() {
               </div>
               <div className="font-light">
                 <h4 className="text-sm">Blog</h4>
-                <p className="text-xs text-primary">
+                <p className="text-primary text-xs">
                   Interests, experiments and thoughts
                 </p>
               </div>
             </Link>
             <Link
               href="/projects"
-              className="m-2 flex items-center space-x-2 rounded-xl bg-darker-primary px-1 py-2"
+              className="bg-darker-primary m-2 flex items-center space-x-2 rounded-xl px-1 py-2"
             >
-              <div className="rounded-xl bg-primary p-3 font-bold text-primary">
+              <div className="bg-primary text-primary rounded-xl p-3 font-bold">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -238,7 +264,7 @@ function Navbar() {
               </div>
               <div className="font-light">
                 <h4 className="text-sm">Projects</h4>
-                <p className="text-xs text-primary">Under construction...</p>
+                <p className="text-primary text-xs">Under construction...</p>
               </div>
             </Link>
           </motion.div>

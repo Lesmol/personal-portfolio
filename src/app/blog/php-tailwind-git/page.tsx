@@ -3,9 +3,9 @@ import Navbar from "@/components/navbar";
 
 function page() {
   return (
-    <>
-      <Navbar />
-      <article className="post-content mx-auto max-w-3xl p-4 text-custom-light-grey md:p-0 md:pb-4">
+    <div className="container mx-auto max-w-3xl items-center p-4 md:p-0 md:pb-4">
+      <Navbar backButton={true} backPath="/blog#php" />
+      <article className="post-content text-custom-light-grey">
         <BlogHeading
           imgUrl="https://lvmp-v2.s3.af-south-1.amazonaws.com/php-tailwind-git.png"
           title="What we did wrong in this project: PHP, Tailwind, Git & GitHub"
@@ -143,7 +143,7 @@ function page() {
           everything if you're working in a small team.
         </p>
       </article>
-    </>
+    </div>
   );
 }
 

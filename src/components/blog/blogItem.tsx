@@ -8,11 +8,12 @@ type Props = {
   Date: string;
   Title: string;
   Summary: string;
+  ID?: string | undefined;
 };
 
 function BlogItem(props: Props) {
   return (
-    <a href={props.BlogPath} className="group">
+    <a href={props.BlogPath} className="group" id={props.ID}>
       <div className="mb-12 w-fit justify-between sm:mx-auto md:flex md:flex-row-reverse">
         <div className="w-full max-w-lg overflow-clip rounded md:ml-2 md:max-w-40">
           <img

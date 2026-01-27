@@ -3,16 +3,16 @@ import Navbar from "@/components/navbar";
 
 function page() {
   return (
-    <>
-      <Navbar />
-      <article className="post-content mx-auto max-w-3xl p-4 text-custom-light-grey md:p-0 md:pb-4">
+    <div className="container mx-auto max-w-3xl items-center p-4 md:p-0 md:pb-4">
+      <Navbar backButton={true} backPath="/blog#aws-migration" />
+      <article className="post-content text-custom-light-grey">
         <BlogHeading
           imgUrl="https://lvmp-v2.s3.af-south-1.amazonaws.com/aws.png"
           title="Migrating over to Next.js, AWS and more..."
           summary="Updating my website and migrating to Next.js and AWS"
           alt="Custom AWS Poster"
         />
-        <h1 className="mb-2 mt-12 text-3xl text-white md:text-4xl">
+        <h1 className="mt-12 mb-2 text-3xl text-white md:text-4xl">
           Introduction
         </h1>
         <p>
@@ -154,7 +154,7 @@ function page() {
           evolves over time.
         </p>
       </article>
-    </>
+    </div>
   );
 }
 

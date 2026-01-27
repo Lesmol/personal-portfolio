@@ -3,16 +3,16 @@ import Navbar from "@/components/navbar";
 
 function page() {
   return (
-    <>
-      <Navbar />
-      <article className="post-content mx-auto max-w-3xl p-4 text-custom-light-grey md:p-0 md:pb-4">
+    <div className="container mx-auto max-w-3xl items-center p-4 md:p-0 md:pb-4">
+      <Navbar backButton={true} backPath="/blog#excel-mapper" />
+      <article className="post-content text-custom-light-grey">
         <BlogHeading
           imgUrl="https://lvmp-v2.s3.af-south-1.amazonaws.com/java-excel-mapper-cover.png"
           title="Breakdown: Mapping any excel file into objects"
           summary="A quick walk through the logic that maps any excel file into objects"
           alt="Custom Java Poster"
         />
-        <h1 className="mb-2 mt-12 text-3xl text-white md:text-4xl">
+        <h1 className="mt-12 mb-2 text-3xl text-white md:text-4xl">
           Introduction
         </h1>
         <p>
@@ -158,15 +158,15 @@ for (int rowCount = 1; rowCount < sheet.getPhysicalNumberOfRows(); rowCount++) {
 
         <h2>Conclusion</h2>
         <p>
-          <strong>To wrap things up</strong>, this logic is the first interation and does a
-          good job at getting the data, throwing exceptions when needed (with a
-          detailed response informing us of the column it failing at) and
-          parsing the data. The next step will be writing the logic that will
-          display the data and allow for manipulation by the user that will
+          <strong>To wrap things up</strong>, this logic is the first interation
+          and does a good job at getting the data, throwing exceptions when
+          needed (with a detailed response informing us of the column it failing
+          at) and parsing the data. The next step will be writing the logic that
+          will display the data and allow for manipulation by the user that will
           allow them to view it in whatever sequence they desire.
         </p>
       </article>
-    </>
+    </div>
   );
 }
 

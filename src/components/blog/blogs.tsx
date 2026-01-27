@@ -5,6 +5,7 @@ function blogs() {
   return (
     <>
       <BlogItem
+        ID="excel-mapper"
         BlogPath="/blog/excel-mapper"
         Date="May 1, 2025"
         ImageAlt="Java Excel Mapper Cover"
@@ -13,6 +14,7 @@ function blogs() {
         Title="Breakdown: Mapping any excel file into objects"
       />
       <BlogItem
+        ID="aws-migration"
         BlogPath="/blog/aws-migration"
         Date="March 22, 2025"
         ImageAlt="AWS Migration Cover"
@@ -21,6 +23,7 @@ function blogs() {
         Title="Migrating over to Next.js, AWS and more..."
       />
       <BlogItem
+        ID="ai-experiment"
         BlogPath="/blog/ai-experiment"
         Date="August 18, 2024"
         ImageAlt="Azure OpenAI Cover"
@@ -29,6 +32,7 @@ function blogs() {
         Title="I tried an Open Source AI model for Image Recognition"
       />
       <BlogItem
+        ID="azure"
         BlogPath="/blog/azure-cost-management"
         Date="July 31, 2024"
         ImageAlt="Azure Cost Management Cover"
@@ -37,6 +41,7 @@ function blogs() {
         Title="How I keep my Azure bill under $0.01"
       />
       <BlogItem
+        ID="php"
         BlogPath="/blog/php-tailwind-git"
         Date="April 7, 2024"
         ImageAlt="PHP, Tailwind, Git & GitHub Cover"

@@ -3,16 +3,16 @@ import Navbar from "@/components/navbar";
 
 function page() {
   return (
-    <>
-      <Navbar />
-      <article className="post-content mx-auto max-w-3xl p-4 text-custom-light-grey md:p-0 md:pb-4">
+    <div className="container mx-auto max-w-3xl items-center p-4 md:p-0 md:pb-4">
+      <Navbar backButton={true} backPath="/blog#ai-experiment" />
+      <article className="post-content text-custom-light-grey">
         <BlogHeading
           imgUrl="https://lvmp-v2.s3.af-south-1.amazonaws.com/openai-next-dotnet.png"
           title="I tried an Open Source AI model for Image Recognition"
           summary="How my attempt at using an Open Source AI model went"
           alt="Custom Azure Poster"
         />
-        <h1 className="mb-2 mt-12 text-3xl text-white md:text-4xl">
+        <h1 className="mt-12 mb-2 text-3xl text-white md:text-4xl">
           Introduction
         </h1>
         <p>
@@ -129,7 +129,7 @@ function page() {
           likely be more expensive than using OpenAI's API.
         </p>
       </article>
-    </>
+    </div>
   );
 }
 
