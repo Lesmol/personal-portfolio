@@ -23,7 +23,7 @@ function BlogItem(props: Props) {
             className="mb-2 h-full w-full object-cover transition duration-300 ease-in-out md:mb-0 md:group-hover:scale-105"
           />
         </div>
-        <div className="md:w-[500px]">
+        <div className="md:w-2xl">
           <h4 className="mb-1 text-sm text-custom-light-grey">{props.Date}</h4>
           <h2 className="text-xl">{props.Title}</h2>
           <h4 className="text-sm text-custom-light-grey">{props.Summary}</h4>

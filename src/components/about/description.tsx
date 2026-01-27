@@ -2,7 +2,7 @@ import React from "react";
 
 function description() {
   return (
-    <div className="mt-10 max-w-screen-sm">
+    <div className="mt-10 max-w-screen-md">
       <p>
         Born in Tzaneen and raised in the beautiful suburbs of Pretoria where I
         currently reside and study to further my knowledge of the IT industry to
