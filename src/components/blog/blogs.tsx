@@ -44,14 +44,6 @@ function blogs() {
         Summary="A description of how I keep my Azure bill low with multiple resources being used"
         Title="What we did wrong in this project: PHP, Tailwind, Git & GitHub"
       />
-      <BlogItem
-        BlogPath="/blog/terraform-azure-actions"
-        Date="March 21, 2024"
-        ImageAlt="Terraform Azure Actions Cover"
-        ImageUrl="https://lvmp-v2.s3.af-south-1.amazonaws.com/terraform-azure-actions.png"
-        Summary="A description of how I keep my Azure bill low with multiple resources being used"
-        Title="My experience provisioning Azure resources using terraform within GitHub Actions"
-      />
     </>
   );
 }
