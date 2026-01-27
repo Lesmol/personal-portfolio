@@ -9,7 +9,7 @@ import React from "react";
 export const metadata: Metadata = {
   title: "Lesedi Molemi | About",
   description:
-    "Welcome to my about about page, where I'll give you a sneak peek into Lesedi Molemi, how to reach me and my professional work experience.",
+    "Welcome to my about page, where I'll give you a sneak peek into Lesedi Molemi, how to reach me and my professional work experience.",
 };
 
 function about() {

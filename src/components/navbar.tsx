@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
@@ -38,7 +39,7 @@ function Navbar() {
           </li>
           <li>
             <Link
-              href="/blogPosts"
+              href="/blog"
               className="150 ml-8 font-medium text-primary transition ease-in-out hover:text-white"
             >
               Blog
@@ -64,7 +65,7 @@ function Navbar() {
                 width="16"
                 height="16"
                 fill="currentColor"
-                className={`bi bi-arrow-down-short ${moreNav ? "transtion rotate-180 duration-150" : "transtion -rotate-0 duration-150"}`}
+                className={`bi bi-arrow-down-short ${moreNav ? "transtion rotate-180 duration-150" : "transtion rotate-0 duration-150"}`}
                 viewBox="0 0 16 16"
               >
                 <path
@@ -87,7 +88,7 @@ function Navbar() {
           width="16"
           height="16"
           fill="currentColor"
-          className={`bi bi-arrow-down-short ${mobileNav ? "transtion rotate-180 duration-150" : "transtion -rotate-0 duration-150"}`}
+          className={`bi bi-arrow-down-short ${mobileNav ? "transtion rotate-180 duration-150" : "transtion rotate-0 duration-150"}`}
           viewBox="0 0 16 16"
         >
           <path
@@ -107,7 +108,7 @@ function Navbar() {
             exit={{ y: -5, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="max-w-2/4 mx-auto flex h-60 w-fit max-w-screen-md justify-center space-x-2 rounded-xl bg-primary/90 p-4 text-lg backdrop-blur-sm">
+            <div className="max-w-2/4 mx-auto flex h-60 w-fit justify-center space-x-2 rounded-xl bg-primary/90 p-4 text-lg backdrop-blur-sm">
               <div className="group relative aspect-square overflow-clip rounded-xl">
                 <img
                   src="https://cloudresumeresources.blob.core.windows.net/resumeimages/random-gun.jpeg"
@@ -196,7 +197,7 @@ function Navbar() {
               </div>
             </Link>
             <Link
-              href="/blogPosts"
+              href="/blog"
               className="m-2 flex items-center space-x-2 rounded-xl bg-darker-primary px-1 py-2"
             >
               <div className="rounded-xl bg-primary p-3 font-bold text-primary">

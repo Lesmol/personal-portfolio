@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface SummaryPaneProps {
@@ -12,7 +13,7 @@ interface SummaryPaneProps {
 function summaryPane(props: SummaryPaneProps) {
   return (
     <a href={props.institutionUrl} target="_blank" className="block">
-      <div className="mx-auto mt-3 flex w-full max-w-[570px] items-center justify-between">
+      <div className="mx-auto mt-3 flex w-full max-w-142.5 items-center justify-between">
         <div className="flex w-96 items-center space-x-3">
           <img
             src={props.imageUrl}
