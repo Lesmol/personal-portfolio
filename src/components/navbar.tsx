@@ -2,6 +2,7 @@
 import { useState } from "react";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface NavbarProps {
@@ -25,10 +26,12 @@ function Navbar(props: NavbarProps) {
     <div className={`flex max-w-xl sm:mx-auto sm:block`}>
       <nav className="bg-primary mt-4 hidden items-center justify-between rounded-3xl px-6 py-4 sm:flex">
         <Link href="/">
-          <img
+          <Image
             src="https://cloudresumeresources.blob.core.windows.net/resumeimages/logo.svg"
             alt="The letters LM written in a stylish font."
-            className="md: w-14"
+            width={56}
+            height={56}
+            className="md:w-14 w-10 h-auto"
           />
         </Link>
 
@@ -69,7 +72,7 @@ function Navbar(props: NavbarProps) {
                 width="16"
                 height="16"
                 fill="currentColor"
-                className={`bi bi-arrow-down-short ${moreNav ? "transtion rotate-180 duration-150" : "transtion rotate-0 duration-150"}`}
+                className={`bi bi-arrow-down-short ${moreNav ? "transition rotate-180 duration-150" : "transition rotate-0 duration-150"}`}
                 viewBox="0 0 16 16"
               >
                 <path
@@ -114,7 +117,7 @@ function Navbar(props: NavbarProps) {
           width="16"
           height="16"
           fill="currentColor"
-          className={`bi bi-arrow-down-short ${mobileNav ? "transtion rotate-180 duration-150" : "transtion rotate-0 duration-150"}`}
+          className={`bi bi-arrow-down-short ${mobileNav ? "transition rotate-180 duration-150" : "transition rotate-0 duration-150"}`}
           viewBox="0 0 16 16"
         >
           <path
@@ -136,30 +139,33 @@ function Navbar(props: NavbarProps) {
           >
             <div className="bg-primary/90 mx-auto flex h-60 w-fit max-w-2/4 justify-center space-x-2 rounded-xl p-4 text-lg backdrop-blur-sm">
               <div className="group relative aspect-square overflow-clip rounded-xl">
-                <img
+                <Image
                   src="https://cloudresumeresources.blob.core.windows.net/resumeimages/random-gun.jpeg"
                   alt="Lesedi Molemi smiling with a bag of fruit"
-                  className="h-full w-full object-cover brightness-50 transition duration-300 ease-out group-hover:brightness-75 md:hover:scale-105"
+                  fill
+                  className="object-cover brightness-50 transition duration-300 ease-out group-hover:brightness-75 md:hover:scale-105"
                 />
                 <div className="absolute bottom-2 left-2 z-50 text-sm font-light group-hover:underline">
                   Window shopping for firearms
                 </div>
               </div>
               <div className="group relative hidden aspect-square overflow-clip rounded-xl md:block">
-                <img
+                <Image
                   src="https://cloudresumeresources.blob.core.windows.net/resumeimages/melrose-lunch.jpeg"
                   alt="Lunch at Melrose Arch"
-                  className="h-full w-full object-cover brightness-50 transition duration-300 ease-out group-hover:brightness-75 md:hover:scale-105"
+                  fill
+                  className="object-cover brightness-50 transition duration-300 ease-out group-hover:brightness-75 md:hover:scale-105"
                 />
                 <div className="absolute bottom-2 left-2 z-50 text-sm font-light group-hover:underline">
                   Lunch at Melrose Arch
                 </div>
               </div>
               <div className="group relative aspect-square overflow-clip rounded-xl">
-                <img
+                <Image
                   src="https://cloudresumeresources.blob.core.windows.net/resumeimages/picking-fruit.jpeg"
                   alt="Lesedi Molemi smiling with a bag of fruit"
-                  className="h-full w-full object-cover brightness-50 transition duration-300 ease-out group-hover:brightness-75 md:hover:scale-105"
+                  fill
+                  className="object-cover brightness-50 transition duration-300 ease-out group-hover:brightness-75 md:hover:scale-105"
                 />
                 <div className="absolute bottom-2 left-2 z-50 text-sm font-light group-hover:underline">
                   Holidays in Giyani
