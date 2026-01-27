@@ -264,7 +264,7 @@ function Navbar(props: NavbarProps) {
               </div>
               <div className="font-light">
                 <h4 className="text-sm">Projects</h4>
-                <p className="text-primary text-xs">Under construction...</p>
+                <p className="text-primary text-xs">Things I&#39;ve built</p>
               </div>
             </Link>
           </motion.div>
