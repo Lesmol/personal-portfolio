@@ -4,26 +4,38 @@ This repository contains the source code for my personal portfolio website. Buil
 
 ## 🚀 Features
 
-* **Modern Framework**: Built on [Next.js 15](https://nextjs.org/) (App Router) and [React 19](https://react.dev/).
-* **Responsive Styling**: Utilizes [Tailwind CSS](https://tailwindcss.com/) for a fully responsive and clean design.
-* **Animations**: Features smooth transitions and interactive elements powered by [Framer Motion](https://www.framer.com/motion/).
-* **Markdown Blog**: Implements a static blog engine using `gray-matter` and `markdown-it` to render posts directly from Markdown files.
-* **Monitoring**: Integrated with Vercel Analytics and Speed Insights for real-time performance tracking.
+* **Cutting-Edge Framework**: Powered by **Next.js 16** (App Router) and **React 19**, utilizing the latest server component patterns.
+* **Fast Development**: Optimized for speed using **Turbopack** (`next dev --turbopack`).
+* **Styling Engine**: Styled with **Tailwind CSS v4** for a modern, utility-first design system.
+* **Animations**: Interactive UI elements and transitions powered by **Framer Motion** and **React Lottie**.
+* **Content Management**:
+    * **Blogs**: Static content generation using `gray-matter` to parse metadata.
+    * **Projects**: structured data showcases for GitHub repositories and technical deep dives.
+
+## 🛠️ Tech Stack
+
+* **Framework**: [Next.js 16.1.5](https://nextjs.org/)
+* **Language**: [TypeScript](https://www.typescriptlang.org/)
+* **Styling**: [Tailwind CSS 4.1](https://tailwindcss.com/) & PostCSS
+* **Animation**: [Framer Motion](https://www.framer.com/motion/) & [React Lottie](https://github.com/chenqingspring/react-lottie)
+* **Linting & Formatting**: ESLint (Next.js config) & Prettier
 
 ## 📂 Repository Structure
 
-* **`src/app`**: Contains the application routes, layouts, and page logic (Home, About, Projects, Blog).
-* **`src/components`**: Reusable UI components used across the site (e.g., Navbar, Experience section, Social links).
-* **`src/blog`**: Directory containing the Markdown files for standard blog posts.
-* **`src/blogPinned`**: Directory for highlighted or pinned blog posts.
-* **`src/lib`**: Utility functions for data fetching and content processing.
+The project follows a modern Next.js App Router structure:
+
+* **`src/app`**: Application routes (Home, About, Blog, Projects) and layouts.
+* **`src/components`**: Reusable UI components (Navbar, Project Cards, Blog Items).
+* **`src/data`**: TypeScript data files (`blogs.ts`, `projects.ts`, `socials.ts`) acting as a lightweight CMS for the site's content.
+* **`src/lib`**: Utility functions for data fetching and processing.
+* **`public`**: Static assets.
 
 ## 🚀 Deployment
 
 The application is optimized for deployment on the [Vercel Platform](https://vercel.com/).
 
-* **Build Command**: `next build`
-* **Start Command**: `next start`
+* [Portfolio Website](https://www.lvmolemi.com/)
+* [GitHub Profile](https://github.com/Lesmol)
 
 ## 🔨 Tools Used
 [![My Skills](https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,css,html&perline=6)](https://skillicons.dev)
