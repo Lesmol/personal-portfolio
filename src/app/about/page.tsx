@@ -12,16 +12,17 @@ export const metadata: Metadata = {
     "Welcome to my about page, where I'll give you a sneak peek into Lesedi Molemi, how to reach me and my professional work experience.",
 };
 
-function about() {
+function About() {
   return (
     <div className="container mx-auto max-w-2xl items-center p-4 md:p-0 md:pb-4">
       <Navbar />
       <Images />
       <Description />
-      <ReachOut />
       <Experience />
+      <ReachOut />
     </div>
   );
 }
 
-export default about;
+export default About;
+

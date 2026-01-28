@@ -1,7 +1,10 @@
 import React from "react";
 import BlogItem from "../blog/blogItem";
+import { blogs } from "@/data/blogs";
 
-function articles() {
+function Articles() {
+  const pinnedBlogs = blogs.filter((blog) => blog.pinned);
+
   return (
     <>
       <h1 className="mb-6 mt-14 text-4xl font-bold">
@@ -10,32 +13,21 @@ function articles() {
           Posts
         </span>
       </h1>
-      <BlogItem
-        BlogPath="/blog/excel-mapper"
-        Date={"01/05/2025"}
-        ImageAlt="Java Excel Mapper Cover"
-        ImageUrl="https://lvmp-v2.s3.af-south-1.amazonaws.com/java-excel-mapper-cover.png"
-        Summary="A quick walk through the logic that maps any excel file into objects"
-        Title="Breakdown: Mapping any excel file into objects"
-      />
-      <BlogItem
-        BlogPath="/blog/aws-migration"
-        Date={"22/03/2025"}
-        ImageAlt="AWS Migration Cover"
-        ImageUrl="https://lvmp-v2.s3.af-south-1.amazonaws.com/aws.png"
-        Summary="Updating my site and migrating to Next.js and AWS"
-        Title="Migrating over to Next.js, AWS and more..."
-      />
-      <BlogItem
-        BlogPath="/blog/ai-experiment"
-        Date={"18/08/2024"}
-        ImageAlt="Azure OpenAI Cover"
-        ImageUrl="https://lvmp-v2.s3.af-south-1.amazonaws.com/openai-next-dotnet.png"
-        Summary="How my attempt at using an Open Source AI model went"
-        Title="I tried an Open Source AI model for Image Recognition"
-      />
+      {pinnedBlogs.map((blog) => (
+        <BlogItem
+          key={blog.id}
+          ID={blog.id}
+          BlogPath={blog.blogPath}
+          Date={blog.date}
+          ImageAlt={blog.imageAlt}
+          ImageUrl={blog.imageUrl}
+          Summary={blog.summary}
+          Title={blog.title}
+        />
+      ))}
     </>
   );
 }
 
-export default articles;
+export default Articles;
+

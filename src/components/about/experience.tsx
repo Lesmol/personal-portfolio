@@ -1,14 +1,14 @@
 import React from "react";
 import SummaryPane from "../summaryPane";
 
-function experience() {
+function Experience() {
   return (
-    <div className="max-w-screen sm mt-10">
-      <h1 className="text-xl">Work</h1>
-      <p className="mb-6 text-sm text-primary">
+    <div className="mt-10 w-full">
+      <h1 className="text-xl font-bold md:text-2xl">Work</h1>
+      <p className="mb-4 text-sm text-primary md:text-base">
         Here are some of the places I&apos;ve worked
       </p>
-      <div id="experience" className="mt-3 space-y-8">
+      <div id="experience" className="mt-3 space-y-4">
         <SummaryPane
           title="Support Specialist"
           duration="2024 - Present"
@@ -30,4 +30,5 @@ function experience() {
   );
 }
 
-export default experience;
+export default Experience;
+
