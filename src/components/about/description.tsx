@@ -1,8 +1,8 @@
 import React from "react";
 
-function description() {
+function Description() {
   return (
-    <div className="mt-10 max-w-screen-md">
+    <div className="mt-10 w-full">
       <p>
         Born in Tzaneen and raised in the beautiful suburbs of Pretoria where I
         currently reside and study to further my knowledge of the IT industry to
@@ -18,4 +18,4 @@ function description() {
   );
 }
 
-export default description;
+export default Description;
