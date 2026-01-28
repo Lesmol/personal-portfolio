@@ -23,8 +23,8 @@ function Navbar(props: NavbarProps) {
   }
 
   return (
-    <div className={`flex max-w-xl sm:mx-auto sm:block`}>
-      <nav className="bg-primary mt-4 hidden items-center justify-between rounded-3xl px-6 py-4 sm:flex">
+    <div className="relative z-50 flex max-w-xl sm:mx-auto sm:block">
+      <nav className="border border-white/10 bg-secondary/40 backdrop-blur-md mt-4 hidden items-center justify-between rounded-3xl px-6 py-4 sm:flex">
         <Link href="/">
           <Image
             src="https://cloudresumeresources.blob.core.windows.net/resumeimages/logo.svg"
@@ -39,7 +39,7 @@ function Navbar(props: NavbarProps) {
           <li>
             <Link
               href="/about"
-              className="150 text-primary ml-8 font-medium transition ease-in-out hover:text-white"
+              className="150 text-custom-light-grey ml-8 font-medium transition ease-in-out hover:text-white"
             >
               About
             </Link>
@@ -47,7 +47,7 @@ function Navbar(props: NavbarProps) {
           <li>
             <Link
               href="/blog"
-              className="150 text-primary ml-8 font-medium transition ease-in-out hover:text-white"
+              className="150 text-custom-light-grey ml-8 font-medium transition ease-in-out hover:text-white"
             >
               Blog
             </Link>
@@ -55,7 +55,7 @@ function Navbar(props: NavbarProps) {
           <li>
             <Link
               href="/projects"
-              className="150 text-primary ml-8 font-medium transition ease-in-out hover:text-white"
+              className="150 text-custom-light-grey ml-8 font-medium transition ease-in-out hover:text-white"
             >
               Projects
             </Link>
@@ -64,7 +64,7 @@ function Navbar(props: NavbarProps) {
           <li>
             <button
               onClick={onToggleMore}
-              className="text-primary ml-4 flex items-center space-x-1 font-medium transition duration-150 ease-in-out hover:text-white"
+              className="text-custom-light-grey ml-4 cursor-pointer flex items-center space-x-1 font-medium transition duration-150 ease-in-out hover:text-white"
             >
               Snapshots{" "}
               <svg
@@ -88,7 +88,7 @@ function Navbar(props: NavbarProps) {
       {props.backButton ? (
         <Link
           href={props.backPath || "/"}
-          className="bg-primary text-primary mt-4 flex w-fit items-center rounded-xl px-4 py-2 text-lg sm:hidden"
+          className="border border-white/10 bg-secondary/40 backdrop-blur-md text-white mt-4 flex w-fit items-center rounded-xl px-4 py-2 text-lg sm:hidden"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +109,7 @@ function Navbar(props: NavbarProps) {
 
       <button
         onClick={onToggle}
-        className="bg-primary ml-auto text-primary mt-4 flex w-fit items-center rounded-xl px-4 py-2 text-lg sm:hidden"
+        className="border border-white/10 bg-secondary/40 backdrop-blur-md ml-auto text-white mt-4 flex w-fit items-center rounded-xl px-4 py-2 text-lg sm:hidden"
       >
         Menu{" "}
         <svg
@@ -137,7 +137,7 @@ function Navbar(props: NavbarProps) {
             exit={{ y: -5, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="bg-primary/90 mx-auto flex h-60 w-fit max-w-2/4 justify-center space-x-2 rounded-xl p-4 text-lg backdrop-blur-sm">
+            <div className="border border-white/10 bg-secondary/80 mx-auto flex h-60 w-fit max-w-2/4 justify-center space-x-2 rounded-xl p-4 text-lg backdrop-blur-xl shadow-2xl">
               <div className="group relative aspect-square overflow-clip rounded-xl">
                 <Image
                   src="https://cloudresumeresources.blob.core.windows.net/resumeimages/random-gun.jpeg"
@@ -180,7 +180,7 @@ function Navbar(props: NavbarProps) {
       <AnimatePresence>
         {mobileNav ? (
           <motion.div
-            className="bg-near-black/90 fixed right-8 mt-20 w-4/5 rounded-xl text-lg backdrop-blur-sm sm:hidden"
+            className="border border-white/10 bg-secondary/90 fixed right-8 mt-20 w-4/5 rounded-xl text-lg backdrop-blur-xl shadow-2xl sm:hidden"
             initial={{ y: -5, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -5, opacity: 0 }}
@@ -188,9 +188,9 @@ function Navbar(props: NavbarProps) {
           >
             <Link
               href="/"
-              className="bg-darker-primary m-2 flex items-center space-x-2 rounded-xl px-1 py-2"
+              className="bg-white/5 m-2 flex items-center space-x-2 rounded-xl px-1 py-2"
             >
-              <div className="bg-primary text-primary rounded-xl p-3 font-bold">
+              <div className="bg-secondary/50 text-white rounded-xl p-3 font-bold">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -203,15 +203,15 @@ function Navbar(props: NavbarProps) {
                 </svg>
               </div>
               <div className="font-light">
-                <h4 className="text-sm">Home</h4>
-                <p className="text-primary text-xs">Welcome to my site!!</p>
+                <h4 className="text-sm font-bold text-white">Home</h4>
+                <p className="text-custom-light-grey text-xs">Welcome to my site!!</p>
               </div>
             </Link>
             <Link
               href="/about"
-              className="bg-darker-primary m-2 flex items-center space-x-2 rounded-xl px-1 py-2"
+              className="bg-white/5 m-2 flex items-center space-x-2 rounded-xl px-1 py-2"
             >
-              <div className="bg-primary text-primary rounded-xl p-3 font-bold">
+              <div className="bg-secondary/50 text-white rounded-xl p-3 font-bold">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -224,15 +224,15 @@ function Navbar(props: NavbarProps) {
                 </svg>
               </div>
               <div className="font-light">
-                <h4 className="text-sm">About</h4>
-                <p className="text-primary text-xs">A little more about me</p>
+                <h4 className="text-sm font-bold text-white">About</h4>
+                <p className="text-custom-light-grey text-xs">A little more about me</p>
               </div>
             </Link>
             <Link
               href="/blog"
-              className="bg-darker-primary m-2 flex items-center space-x-2 rounded-xl px-1 py-2"
+              className="bg-white/5 m-2 flex items-center space-x-2 rounded-xl px-1 py-2"
             >
-              <div className="bg-primary text-primary rounded-xl p-3 font-bold">
+              <div className="bg-secondary/50 text-white rounded-xl p-3 font-bold">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -246,17 +246,17 @@ function Navbar(props: NavbarProps) {
                 </svg>
               </div>
               <div className="font-light">
-                <h4 className="text-sm">Blog</h4>
-                <p className="text-primary text-xs">
+                <h4 className="text-sm font-bold text-white">Blog</h4>
+                <p className="text-custom-light-grey text-xs">
                   Interests, experiments and thoughts
                 </p>
               </div>
             </Link>
             <Link
               href="/projects"
-              className="bg-darker-primary m-2 flex items-center space-x-2 rounded-xl px-1 py-2"
+              className="bg-white/5 m-2 flex items-center space-x-2 rounded-xl px-1 py-2"
             >
-              <div className="bg-primary text-primary rounded-xl p-3 font-bold">
+              <div className="bg-secondary/50 text-white rounded-xl p-3 font-bold">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -269,8 +269,8 @@ function Navbar(props: NavbarProps) {
                 </svg>
               </div>
               <div className="font-light">
-                <h4 className="text-sm">Projects</h4>
-                <p className="text-primary text-xs">Things I&#39;ve built</p>
+                <h4 className="text-sm font-bold text-white">Projects</h4>
+                <p className="text-custom-light-grey text-xs">Things I&#39;ve built</p>
               </div>
             </Link>
           </motion.div>
