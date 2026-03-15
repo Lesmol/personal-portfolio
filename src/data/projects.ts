@@ -12,6 +12,25 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    name: "email-api_springboot",
+    description:
+      "An email service with built-in email templates I use to programmatically send emails.",
+    languages: [{ name: "Java", color: "#473520ff" }],
+    githubUrl: "https://github.com/Lesmol/email-api_springboot",
+  },
+  {
+    name: "market-data_lambda",
+    description:
+      "Core business logic for retrieving and calling email-api to send market data emails to recipients.",
+    languages: [
+      { name: "Python", color: "#3572A5" },
+      { name: "Docker", color: "#334e55ff" },
+      { name: "AWS", color: "#FF9900" },
+      { name: "Github Actions", color: "#063997ff" },
+    ],
+    githubUrl: "https://github.com/Lesmol/market-data_lambda",
+  },
+  {
     name: "market-financials-auth-rust_lambda",
     description:
       "Authentication and authorization logic for the Market Financials platform, implemented as an AWS Lambda function.",
@@ -35,18 +54,6 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Lesmol/market-financials_lambda",
   },
   {
-    name: "market-data_lambda",
-    description:
-      "Core business logic for retrieving and calling email-api to send market data emails to recipients.",
-    languages: [
-      { name: "Python", color: "#3572A5" },
-      { name: "Docker", color: "#334e55ff" },
-      { name: "AWS", color: "#FF9900" },
-      { name: "Github Actions", color: "#063997ff" },
-    ],
-    githubUrl: "https://github.com/Lesmol/market-data_lambda",
-  },
-  {
     name: "market-financials-lambda_terraform",
     description:
       "Infrastructure as Code (IaC) using Terraform to deploy and manage Market Financials Lambda functions and related AWS resources.",
@@ -55,13 +62,6 @@ export const projects: Project[] = [
       { name: "Github Actions", color: "#063997ff" },
     ],
     githubUrl: "https://github.com/Lesmol/market-financials-lambda_terraform",
-  },
-  {
-    name: "email-api_springboot",
-    description:
-      "An email service with built-in email templates I use to programmatically send emails.",
-    languages: [{ name: "Java", color: "#473520ff" }],
-    githubUrl: "https://github.com/Lesmol/email-api_springboot",
   },
   {
     name: "personal-portfolio_legacy",
