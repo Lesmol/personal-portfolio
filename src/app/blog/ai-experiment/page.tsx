@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar";
 function page() {
   return (
     <div className="container mx-auto max-w-3xl items-center p-4 md:p-0 md:pb-4">
-      <Navbar backButton={true} backPath="/blog#ai-experiment" />
+      <Navbar />
       <article className="post-content text-custom-light-grey">
         <BlogHeading
           imgUrl="https://lvmp-v2.s3.af-south-1.amazonaws.com/openai-next-dotnet.png"
