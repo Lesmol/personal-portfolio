@@ -26,7 +26,7 @@ function Hero() {
       <div className="mt-2 flex flex-col gap-3 md:flex-row md:flex-wrap">
         <a
           href="#work"
-          className="inline-flex min-h-[50px] items-center justify-center gap-2 rounded-[10px] bg-accent px-5.5 font-medium text-on-accent hover:bg-[#F5B95A] hover:text-on-accent md:min-h-12"
+          className="inline-flex min-h-[50px] items-center justify-center gap-2 rounded-[10px] bg-accent-button px-5.5 font-medium text-on-accent hover:bg-accent-button-hover hover:text-on-accent md:min-h-12"
         >
           See my work <ArrowRightIcon />
         </a>

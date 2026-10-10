@@ -19,6 +19,8 @@ export default {
         soft: "#B4BAC3",
         muted: "#9BA1AB",
         accent: "#F2A93B",
+        "accent-button": "#D18A1E",
+        "accent-button-hover": "#DC9629",
         "on-accent": "#15120B",
       },
       fontFamily: {

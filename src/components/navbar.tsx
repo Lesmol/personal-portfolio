@@ -8,8 +8,8 @@ type NavLink = { label: string; href: string };
 
 function getLinks(isHome: boolean): NavLink[] {
   return [
-    { label: "/work", href: isHome ? "#work" : "/#work" },
     { label: "/writing", href: isHome ? "#writing" : "/blog" },
+    { label: "/work", href: isHome ? "#work" : "/#work" },
     { label: "/career", href: isHome ? "#career" : "/#career" },
   ];
 }

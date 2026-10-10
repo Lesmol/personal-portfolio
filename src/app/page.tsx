@@ -11,8 +11,8 @@ export default function Home() {
       <Navbar />
       <main id="top">
         <Hero />
-        <Work />
         <Writing />
+        <Work />
         <Career />
       </main>
       <Footer />

@@ -32,14 +32,6 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Lesmol/market-financials_lambda",
   },
   {
-    tag: "JAVA 25 · SPRING BOOT 4",
-    name: "Capital Allocation Engine",
-    description:
-      "A REST API for financial pools: users and banking details, pool memberships, contributions and monthly payout calculations, persisted in PostgreSQL.",
-    stack: ["Java 25", "Spring Data JPA", "PostgreSQL", "Docker"],
-    githubUrl: "https://github.com/Lesmol/capital-allocation-engine_java",
-  },
-  {
     tag: "JAVA · CLI",
     name: "MarketCLI",
     description:
