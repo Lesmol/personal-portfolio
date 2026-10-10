@@ -16,7 +16,8 @@ export const career: CareerEntry[] = [
   {
     dates: "Nov 2024 - Sep 2026",
     title: "Support Specialist · Capitec Business Bank",
-    detail: "Tier 3 support on the Business Banking app.",
+    detail:
+      "Where I learned the codebase: resolved escalated client issues, shipped production fixes, worked on a front-end redesign in React and ran releases for the Business Banking app.",
     current: false,
   },
 ];
