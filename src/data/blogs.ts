@@ -13,6 +13,19 @@ export interface Blog {
 
 export const blogs: Blog[] = [
   {
+    id: "email-api",
+    tag: "JAVA",
+    readingTime: 11,
+    blogPath: "/blog/email-api",
+    date: "2026-10-10",
+    imageAlt: "Java, .NET, Python, Rust, Terraform and AWS logos on a coloured gradient",
+    imageUrl: "https://lvmp-v2.s3.af-south-1.amazonaws.com/email-api-cover.png",
+    summary:
+      "How my twice-weekly market update email went from one .NET Lambda to a Spring Boot Email API on AWS, and what I'd write differently now",
+    title: "From One Lambda to Four: How My Market Emails Grew Up 📈",
+    pinned: true,
+  },
+  {
     id: "excel-mapper",
     tag: "JAVA",
     readingTime: 4,
