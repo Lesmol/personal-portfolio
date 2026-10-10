@@ -24,9 +24,9 @@ This repository contains the source code for my personal portfolio website. Buil
 
 The project follows a modern Next.js App Router structure:
 
-* **`src/app`**: Application routes (Home, About, Blog, Projects) and layouts.
-* **`src/components`**: Reusable UI components (Navbar, Project Cards, Blog Items).
-* **`src/data`**: TypeScript data files (`blogs.ts`, `projects.ts`, `socials.ts`) acting as a lightweight CMS for the site's content.
+* **`src/app`**: Application routes (Home and Blog) and layouts.
+* **`src/components`**: Reusable UI components (Navbar, Footer, Project Cards, Post Rows).
+* **`src/data`**: TypeScript data files (`blogs.ts`, `projects.ts`, `career.ts`) acting as a lightweight CMS for the site's content.
 * **`src/lib`**: Utility functions for data fetching and processing.
 * **`public`**: Static assets.
 
