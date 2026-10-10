@@ -27,7 +27,7 @@ const mono = IBM_Plex_Mono({
 });
 
 const description =
-  "I'm Lesedi Molemi, a software engineer in Pretoria. I work across the back end and front end of Capitec's Business Banking app, and write about what I build on the side.";
+  "I'm Lesedi Molemi, a software engineer living in Pretoria and working in Sandton. I build across the back end and front end of Capitec's Business Banking app, and write about what I build on the side.";
 
 export const metadata: Metadata = {
   title: "Lesedi Molemi",
