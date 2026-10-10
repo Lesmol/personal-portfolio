@@ -19,8 +19,8 @@ function Hero() {
       </h1>
 
       <p className="max-w-[60ch] text-[17px] text-soft md:text-xl">
-        I&apos;m Lesedi Molemi, a software engineer in Pretoria. I work across the back end
-        and front end of Capitec&apos;s Business Banking app, and write about what I build on the side.
+        I&apos;m Lesedi Molemi, a software engineer living in Pretoria and working in Sandton.
+        I build across the back end and front end of Capitec&apos;s Business Banking app, and write about what I build on the side.
       </p>
 
       <div className="mt-2 flex flex-col gap-3 md:flex-row md:flex-wrap">
