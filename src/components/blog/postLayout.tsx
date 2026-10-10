@@ -49,7 +49,7 @@ function PostLayout({ id, imgUrl, alt, title, summary, children }: PostLayoutPro
             <p className="mb-7 text-lg leading-normal text-soft md:mb-8 md:text-[21px]">
               {summary}
             </p>
-            <figure className="mb-10 flex flex-col gap-2.5 md:mb-12">
+            <figure className="mb-10 md:mb-12">
               <Image
                 src={imgUrl}
                 alt={alt}
@@ -59,7 +59,6 @@ function PostLayout({ id, imgUrl, alt, title, summary, children }: PostLayoutPro
                 sizes="(max-width: 760px) 100vw, 696px"
                 className="h-auto w-full rounded-[14px] bg-figure"
               />
-              <figcaption className="font-mono text-xs text-muted">{alt}</figcaption>
             </figure>
           </header>
 

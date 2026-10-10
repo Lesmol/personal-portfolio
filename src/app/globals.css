@@ -154,9 +154,6 @@ a:hover {
 
 .post-content figure {
   margin: 8px 0 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .post-content figure img {
@@ -167,11 +164,6 @@ a:hover {
   background: var(--color-figure);
 }
 
-.post-content figcaption {
-  font-family: var(--font-plex-mono), monospace;
-  font-size: 12px;
-  color: var(--color-muted);
-}
 
 .post-content blockquote {
   margin: 0 0 22px;

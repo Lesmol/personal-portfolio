@@ -51,7 +51,6 @@ function page() {
           src="https://lvmp-v2.s3.af-south-1.amazonaws.com/xnapper-gradient-terminal.png"
           alt="Downloading Llava Model Terminal"
         />
-        <figcaption>Downloading Llava Model Terminal</figcaption>
       </figure>
       <h2>Running the Model</h2>
       <p>
@@ -75,21 +74,18 @@ function page() {
           src="https://lvmp-v2.s3.af-south-1.amazonaws.com/xnapper-gradient-code.png"
           alt="Python scriopt running Llava model"
         />
-        <figcaption>Python scriopt running Llava model</figcaption>
       </figure>
       <figure>
         <img
           src="https://lvmp-v2.s3.af-south-1.amazonaws.com/xnapper-gradient-output.png"
           alt="Model Output Terminal"
         />
-        <figcaption>Model Output Terminal</figcaption>
       </figure>{" "}
       <figure>
         <img
           src="https://lvmp-v2.s3.af-south-1.amazonaws.com/pothole.jpg"
           alt="Pothole Image"
         />
-        <figcaption>Pothole Image</figcaption>
       </figure>
       <h2>OpenAI's GPT 4o-mini</h2>
       <p>
