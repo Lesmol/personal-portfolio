@@ -29,20 +29,15 @@ const mono = IBM_Plex_Mono({
 const description =
   "I'm Lesedi Molemi, a software engineer living in Pretoria and working in Sandton. I build across the back end and front end of Capitec's Business Banking app, and write about what I build on the side.";
 
+// Preview images come from opengraph-image.png / twitter-image.png in this folder.
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.lvmolemi.com"),
   title: "Lesedi Molemi",
   description,
   openGraph: {
     title: "Lesedi Molemi",
     description,
     siteName: "Lesedi Molemi",
-    images: [
-      {
-        url: "https://cloudresumeresources.blob.core.windows.net/resumeimages/logo.svg",
-        width: 800,
-        height: 600,
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
@@ -50,7 +45,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lesedi Molemi",
     description,
-    images: ["https://cloudresumeresources.blob.core.windows.net/resumeimages/logo.svg"],
   },
 };
 
