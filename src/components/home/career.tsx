@@ -8,7 +8,7 @@ function Career() {
         <h2 className="font-display text-[32px] font-bold tracking-[-0.02em] md:text-[40px]">
           Career
         </h2>
-        <p className="max-w-[34ch] text-soft">From support to back-end engineering at Capitec.</p>
+        <p className="max-w-[34ch] text-soft">From support to software engineering at Capitec.</p>
       </div>
       <ol className="flex flex-[2_1_520px] flex-col">
         {career.map((entry, index) => (

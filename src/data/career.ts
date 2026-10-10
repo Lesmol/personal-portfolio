@@ -10,7 +10,7 @@ export const career: CareerEntry[] = [
     dates: "Oct 2026 - Present",
     title: "Software Engineer: Back-End · Capitec Business Bank",
     detail:
-      "BB Digital App Product team. Building out new product features in BB Banking App.",
+      "BB Digital App Product team. Building out new product features across the back end and front end of the BB Banking App.",
     current: true,
   },
   {
