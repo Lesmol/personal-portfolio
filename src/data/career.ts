@@ -7,15 +7,15 @@ export interface CareerEntry {
 
 export const career: CareerEntry[] = [
   {
-    dates: "Oct 2026 — Present",
-    title: "Software Engineer: Back-End · Capitec Bank",
+    dates: "Oct 2026 - Present",
+    title: "Software Engineer: Back-End · Capitec Business Bank",
     detail:
-      "BB Digital App Product team. Delivered the self-service Credit Card in the BB App and helped build BRAYE.",
+      "BB Digital App Product team. Building out new product features in BB Banking App.",
     current: true,
   },
   {
-    dates: "Nov 2024 — Sep 2026",
-    title: "Support Specialist (Tier 3) · Capitec Business Bank",
+    dates: "Nov 2024 - Sep 2026",
+    title: "Support Specialist · Capitec Business Bank",
     detail: "Tier 3 support on the Business Banking app.",
     current: false,
   },
