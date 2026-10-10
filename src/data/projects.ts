@@ -1,78 +1,58 @@
-export interface Language {
-  name: string;
-  color: string;
-}
-
 export interface Project {
+  tag: string;
   name: string;
   description: string;
-  languages: Language[];
+  stack: string[];
   githubUrl: string;
 }
 
 export const projects: Project[] = [
   {
-    name: "email-api_springboot",
+    tag: "MICROSERVICES · JAVA",
+    name: "Customer Statements",
     description:
-      "An email service with built-in email templates I use to programmatically send emails.",
-    languages: [{ name: "Java", color: "#473520ff" }],
-    githubUrl: "https://github.com/Lesmol/email-api_springboot",
+      "Upload, store and retrieve customer account statements. An API gateway fronts three Spring Boot services, authenticates every request against Dex (OIDC), stores files in S3 and caches pre-signed download URLs in Redis.",
+    stack: ["Spring Boot", "PostgreSQL", "Redis", "S3", "Docker"],
+    githubUrl: "https://github.com/Lesmol/customer-statements_springboot",
   },
   {
-    name: "market-data_lambda",
+    tag: "SERVERLESS · AWS",
+    name: "Statement Analysis",
     description:
-      "Core business logic for retrieving and calling email-api to send market data emails to recipients.",
-    languages: [
-      { name: "Python", color: "#3572A5" },
-      { name: "Docker", color: "#334e55ff" },
-      { name: "AWS", color: "#FF9900" },
-      { name: "Github Actions", color: "#063997ff" },
-    ],
-    githubUrl: "https://github.com/Lesmol/market-data_lambda",
+      "Bank statement upload and analysis. A Spring Modulith on Lambda with Cognito auth and Aurora, Textract for PDF extraction and Claude for insights, wired through SNS/SQS and provisioned across two regions with Terraform.",
+    stack: ["Spring Modulith", "Lambda", "Textract", "Terraform", "React"],
+    githubUrl: "https://github.com/Lesmol/statement-analysis_springboot",
   },
   {
-    name: "market-financials-auth-rust_lambda",
+    tag: "SERVERLESS · PYTHON · RUST",
+    name: "Market Financials",
     description:
-      "Authentication and authorization logic for the Market Financials platform, implemented as an AWS Lambda function.",
-    languages: [
-      { name: "Rust", color: "#eead51ff" },
-      { name: "AWS", color: "#FF9900" },
-      { name: "Github Actions", color: "#063997ff" },
-    ],
-    githubUrl: "https://github.com/Lesmol/market-financials-auth-rust_lambda",
-  },
-  {
-    name: "market-financials_lambda",
-    description:
-      "Core business logic for processing market financial data, built as a serverless AWS Lambda function.",
-    languages: [
-      { name: "Python", color: "#3572A5" },
-      { name: "Docker", color: "#334e55ff" },
-      { name: "AWS", color: "#FF9900" },
-      { name: "Github Actions", color: "#063997ff" },
-    ],
+      "A market data platform on AWS Lambda: a containerised Python function serving financial statements and a Rust authoriser validating API keys against DynamoDB, deployed with Terraform and GitHub Actions.",
+    stack: ["Python", "Rust", "DynamoDB", "Terraform", "GitHub Actions"],
     githubUrl: "https://github.com/Lesmol/market-financials_lambda",
   },
   {
-    name: "market-financials-lambda_terraform",
+    tag: "JAVA 25 · SPRING BOOT 4",
+    name: "Capital Allocation Engine",
     description:
-      "Infrastructure as Code (IaC) using Terraform to deploy and manage Market Financials Lambda functions and related AWS resources.",
-    languages: [
-      { name: "Terraform", color: "#7B42BC" },
-      { name: "Github Actions", color: "#063997ff" },
-    ],
-    githubUrl: "https://github.com/Lesmol/market-financials-lambda_terraform",
+      "A REST API for financial pools: users and banking details, pool memberships, contributions and monthly payout calculations, persisted in PostgreSQL.",
+    stack: ["Java 25", "Spring Data JPA", "PostgreSQL", "Docker"],
+    githubUrl: "https://github.com/Lesmol/capital-allocation-engine_java",
   },
   {
-    name: "personal-portfolio_legacy",
+    tag: "JAVA · CLI",
+    name: "MarketCLI",
     description:
-      "The previous version of my personal portfolio website, maintained for historical reference.",
-    languages: [
-      { name: "React", color: "#61DAFB" },
-      { name: "Typescript", color: "#007ACC" },
-      { name: "Tailwind", color: "#38B2AC" },
-    ],
-    githubUrl: "https://github.com/Lesmol/personal-portfolio_legacy",
+      "Market data from the terminal: stock fundamentals, DCF valuations, earnings and forex rates through the Polygon.io API.",
+    stack: ["Java", "Maven", "Polygon.io"],
+    githubUrl: "https://github.com/Lesmol/market-cli",
+  },
+  {
+    tag: "SPRING BOOT · AWS SES",
+    name: "Email API",
+    description:
+      "Template-driven market update emails rendered with Thymeleaf and sent through SES, running as a containerised Lambda.",
+    stack: ["Spring Boot", "Thymeleaf", "SES", "Lambda"],
+    githubUrl: "https://github.com/Lesmol/email-api_springboot",
   },
 ];
-
