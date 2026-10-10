@@ -7,26 +7,26 @@ This repository contains the source code for my personal portfolio website. Buil
 * **Cutting-Edge Framework**: Powered by **Next.js 16** (App Router) and **React 19**, utilizing the latest server component patterns.
 * **Fast Development**: Optimized for speed using **Turbopack** (`next dev --turbopack`).
 * **Styling Engine**: Styled with **Tailwind CSS v4** for a modern, utility-first design system.
-* **Animations**: Interactive UI elements and transitions powered by **Framer Motion** and **React Lottie**.
+* **Animations**: Interactive UI elements and transitions powered by **Framer Motion**.
 * **Content Management**:
-    * **Blogs**: Static content generation using `gray-matter` to parse metadata.
+    * **Blogs**: Post metadata lives in `src/data/blogs.ts`; posts are statically generated.
     * **Projects**: structured data showcases for GitHub repositories and technical deep dives.
 
 ## 🛠️ Tech Stack
 
-* **Framework**: [Next.js 16.1.5](https://nextjs.org/)
+* **Framework**: [Next.js 16.4](https://nextjs.org/)
 * **Language**: [TypeScript](https://www.typescriptlang.org/)
-* **Styling**: [Tailwind CSS 4.1](https://tailwindcss.com/) & PostCSS
-* **Animation**: [Framer Motion](https://www.framer.com/motion/) & [React Lottie](https://github.com/chenqingspring/react-lottie)
+* **Styling**: [Tailwind CSS 4.3](https://tailwindcss.com/) & PostCSS
+* **Animation**: [Framer Motion](https://www.framer.com/motion/)
 * **Linting & Formatting**: ESLint (Next.js config) & Prettier
 
 ## 📂 Repository Structure
 
 The project follows a modern Next.js App Router structure:
 
-* **`src/app`**: Application routes (Home, About, Blog, Projects) and layouts.
-* **`src/components`**: Reusable UI components (Navbar, Project Cards, Blog Items).
-* **`src/data`**: TypeScript data files (`blogs.ts`, `projects.ts`, `socials.ts`) acting as a lightweight CMS for the site's content.
+* **`src/app`**: Application routes (Home and Blog) and layouts.
+* **`src/components`**: Reusable UI components (Navbar, Footer, Project Cards, Post Rows).
+* **`src/data`**: TypeScript data files (`blogs.ts`, `projects.ts`, `career.ts`) acting as a lightweight CMS for the site's content.
 * **`src/lib`**: Utility functions for data fetching and processing.
 * **`public`**: Static assets.
 

@@ -1,15 +1,21 @@
-import About from "@/components/home/about";
-import Articles from "@/components/home/articles";
-import Socials from "@/components/home/socials";
+import Career from "@/components/home/career";
+import Hero from "@/components/home/hero";
+import Work from "@/components/home/work";
+import Writing from "@/components/home/writing";
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
-    <div className="container mx-auto max-w-2xl items-center p-4 md:p-0 md:pb-4">
+    <>
       <Navbar />
-      <About />
-      <Socials />
-      <Articles />
-    </div>
+      <main id="top">
+        <Hero />
+        <Writing />
+        <Work />
+        <Career />
+      </main>
+      <Footer />
+    </>
   );
 }

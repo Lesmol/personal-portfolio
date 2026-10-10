@@ -9,23 +9,28 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#999999",
-        "darker-primary": "#616161",
-        background: "#1E1E1E",
-        "custom-light-grey": "#B3B3B3",
+        bg: "#0F1115",
+        card: "#171A20",
+        figure: "#14171C",
+        line: "#262A33",
+        "line-strong": "#3A3F4B",
+        text: "#ECEDEE",
+        body: "#C9CDD3",
+        soft: "#B4BAC3",
+        muted: "#9BA1AB",
+        accent: "#F2A93B",
+        "accent-button": "#D18A1E",
+        "accent-button-hover": "#DC9629",
+        "on-accent": "#15120B",
       },
-      screens: {
-        sm: "480px",
-        md: "768px",
-        lg: "976px",
-        xl: "1440px",
+      fontFamily: {
+        display: ["var(--font-bricolage)", "Georgia", "serif"],
+        sans: ["var(--font-plex-sans)", "Helvetica Neue", "sans-serif"],
+        mono: ["var(--font-plex-mono)", "monospace"],
       },
-      backgroundColor: {
-        primary: "#141414",
-        "darker-primary": "#0A0A0A",
-        "near-black": "#050505",
-        secondary: "#181818",
-        light: "#E9E9E9",
+      maxWidth: {
+        content: "1120px",
+        article: "760px",
       },
     },
   },
