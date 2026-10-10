@@ -11,8 +11,15 @@ function Career() {
         <p className="max-w-[34ch] text-soft">From support to back-end engineering at Capitec.</p>
       </div>
       <ol className="flex flex-[2_1_520px] flex-col">
-        {career.map((entry) => (
-          <li key={entry.dates} className="flex gap-4.5 pb-8 last:pb-0 md:gap-6">
+        {career.map((entry, index) => (
+          <li key={entry.dates} className="relative flex gap-4.5 pb-8 last:pb-0 md:gap-6">
+            {index < career.length - 1 ? (
+              // Connects this dot (8px down, 12px tall) to the next entry's dot.
+              <span
+                aria-hidden="true"
+                className="absolute top-5 -bottom-2 left-[5.5px] w-px bg-line-strong"
+              />
+            ) : null}
             <span
               aria-hidden="true"
               className={`mt-2 size-3 shrink-0 rounded-full ${
