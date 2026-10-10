@@ -32,14 +32,6 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Lesmol/market-financials_lambda",
   },
   {
-    tag: "JAVA · CLI",
-    name: "MarketCLI",
-    description:
-      "Market data from the terminal: stock fundamentals, DCF valuations, earnings and forex rates through the Polygon.io API.",
-    stack: ["Java", "Maven", "Polygon.io"],
-    githubUrl: "https://github.com/Lesmol/market-cli",
-  },
-  {
     tag: "SPRING BOOT · AWS SES",
     name: "Email API",
     description:
