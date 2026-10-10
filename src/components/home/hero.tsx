@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRightIcon } from "@/components/icons";
 
-const stack = ["Java · Spring Boot", "C# · .NET Core", "AWS · Terraform", "Python", "Rust", "Docker", "React · Next.js"];
+const stack = ["Java · Spring Boot", "C# · .NET Core", "AWS · Terraform", "Python", "Rust", "Docker", "React · Next.js · Vite"];
 
 function Hero() {
   return (
