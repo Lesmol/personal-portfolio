@@ -32,9 +32,6 @@ const description =
 export const metadata: Metadata = {
   title: "Lesedi Molemi",
   description,
-  icons: {
-    icon: "https://cloudresumeresources.blob.core.windows.net/resumeimages/logo.svg",
-  },
   openGraph: {
     title: "Lesedi Molemi",
     description,
