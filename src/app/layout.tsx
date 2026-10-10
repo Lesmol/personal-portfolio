@@ -1,27 +1,43 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Roboto } from "next/font/google";
+import { Bricolage_Grotesque, IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const roboto = Roboto({
-  weight: ["300", "400", "700"],
-  style: ["normal", "italic"],
+// Tailwind exposes these as --font-display / --font-sans / --font-mono.
+const display = Bricolage_Grotesque({
+  weight: ["500", "700"],
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-bricolage",
 });
+
+const sans = IBM_Plex_Sans({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-plex-sans",
+});
+
+const mono = IBM_Plex_Mono({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-plex-mono",
+});
+
+const description =
+  "I'm Lesedi Molemi, a back-end engineer in Pretoria. I build software for Capitec's Business Banking app, and write about what I build on the side.";
 
 export const metadata: Metadata = {
   title: "Lesedi Molemi",
-  description:
-    "Hi there👋🏾, I'm Lesedi. Welcome to my website where I manipulate the information to show you what I want you to see😈",
+  description,
   icons: {
     icon: "https://cloudresumeresources.blob.core.windows.net/resumeimages/logo.svg",
   },
   openGraph: {
     title: "Lesedi Molemi",
-    description:
-      "Hi there👋🏾, I'm Lesedi. Welcome to my website where I manipulate the information to show you what I want you to see😈",
+    description,
     siteName: "Lesedi Molemi",
     images: [
       {
@@ -36,8 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Lesedi Molemi",
-    description:
-      "Hi there👋🏾, I'm Lesedi. Welcome to my website where I manipulate the information to show you what I want you to see😈",
+    description,
     images: ["https://cloudresumeresources.blob.core.windows.net/resumeimages/logo.svg"],
   },
 };
@@ -48,8 +63,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={roboto.className}>
+    <html lang="en" className={`${display.variable} ${sans.variable} ${mono.variable}`}>
+      <body className="bg-bg font-sans text-text">
         {children}
         <Analytics />
         <SpeedInsights />
