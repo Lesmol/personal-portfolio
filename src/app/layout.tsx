@@ -3,6 +3,7 @@ import "./globals.css";
 import { Bricolage_Grotesque, IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SITE_URL } from "@/lib/site";
 
 // Tailwind exposes these as --font-display / --font-sans / --font-mono.
 const display = Bricolage_Grotesque({
@@ -31,7 +32,7 @@ const description =
 
 // Preview images come from opengraph-image.png / twitter-image.png in this folder.
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.lvmolemi.com"),
+  metadataBase: new URL(SITE_URL),
   title: "Lesedi Molemi",
   description,
   openGraph: {

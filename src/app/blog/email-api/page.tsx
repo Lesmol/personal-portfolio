@@ -5,7 +5,7 @@ function page() {
     <PostLayout
       id="email-api"
       imgUrl="https://lvmp-v2.s3.af-south-1.amazonaws.com/email-api-cover.png"
-      title="From One Lambda to Four: How My Market Emails Grew Up 📈"
+      title="From One Lambda to Four: How My Market Emails Grew Up"
       summary="How my twice-weekly market update email went from one .NET Lambda to a Spring Boot Email API on AWS, and what I'd write differently now"
       alt="Java, .NET, Python, Rust, Terraform and AWS logos on a coloured gradient"
     >
@@ -50,8 +50,8 @@ function page() {
           </picture>
         </a>
       </figure>
-      <p>⏰ EventBridge wakes up the <a href="https://github.com/Lesmol/market-data_lambda" target="_blank" rel="noopener noreferrer">market-data Lambda</a> at 07:00 UTC (09:00 here in South Africa) on Tuesdays and Thursdays. It reads the tickers and subscribers from a DynamoDB config table, then asks Polygon for yesterday's opening price and the price about 30 days earlier for each ticker. It still sleeps every 4 calls 😴, works out the percentage change, adds the USD/ZAR rate and POSTs the lot to the Email API with an <code>x-api-key</code> header.</p>
-      <p>🛂 That request hits API Gateway first, where a tiny <a href="https://github.com/Lesmol/market-financials-auth_lambda" target="_blank" rel="noopener noreferrer">Python authoriser</a> checks the key against its own DynamoDB table. No key in the table, no entry. Once it's through, the Email API renders the email and hands it to SES to deliver 🚀.</p>
+      <p>EventBridge wakes up the <a href="https://github.com/Lesmol/market-data_lambda" target="_blank" rel="noopener noreferrer">market-data Lambda</a> at 07:00 UTC (09:00 here in South Africa) on Tuesdays and Thursdays. It reads the tickers and subscribers from a DynamoDB config table, then asks Polygon for yesterday's opening price and the price about 30 days earlier for each ticker. It still sleeps every 4 calls 😴, works out the percentage change, adds the USD/ZAR rate and POSTs the lot to the Email API with an <code>x-api-key</code> header.</p>
+      <p>That request hits API Gateway first, where a tiny <a href="https://github.com/Lesmol/market-financials-auth_lambda" target="_blank" rel="noopener noreferrer">Python authoriser</a> checks the key against its own DynamoDB table. No key in the table, no entry. Once it's through, the Email API renders the email and hands it to SES to deliver 🚀.</p>
       <h2>Inside the Email API 🔧</h2>
       <p>The <a href="https://github.com/Lesmol/email-api_springboot" target="_blank" rel="noopener noreferrer">Email API</a> is a small Spring Boot 4 app on Java 25. Right now it has exactly one endpoint, <code>POST /api/v1/send-market-update</code>, which takes the stocks, the forex rate and who to send it to:</p>
       <pre>
