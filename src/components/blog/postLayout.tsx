@@ -3,9 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import CopyLinkButton from "@/components/blog/copyLinkButton";
 import { ArrowLeftIcon } from "@/components/icons";
 import { blogs } from "@/data/blogs";
 import { formatDate } from "@/lib/formatDate";
+import { SITE_URL } from "@/lib/site";
 
 type PostLayoutProps = {
   id: string;
@@ -22,6 +24,7 @@ function PostLayout({ id, imgUrl, alt, title, summary, children }: PostLayoutPro
   const post = posts[index];
   // Next-oldest post; the oldest wraps around to the newest.
   const next = posts[(index + 1) % posts.length];
+  const shareUrl = post ? new URL(post.blogPath, SITE_URL).toString() : SITE_URL;
 
   return (
     <>
@@ -29,13 +32,16 @@ function PostLayout({ id, imgUrl, alt, title, summary, children }: PostLayoutPro
       <main>
         <article className="mx-auto max-w-article px-5 pt-10 pb-16 md:px-8 md:pt-18 md:pb-24">
           <header>
-            <Link
-              href="/blog"
-              className="inline-flex min-h-11 items-center gap-2 font-mono text-[13px] text-muted"
-            >
-              <ArrowLeftIcon />
-              <span>All posts</span>
-            </Link>
+            <div className="flex flex-wrap items-center justify-between gap-x-6">
+              <Link
+                href="/blog"
+                className="inline-flex min-h-11 items-center gap-2 font-mono text-[13px] text-muted"
+              >
+                <ArrowLeftIcon />
+                <span>All posts</span>
+              </Link>
+              <CopyLinkButton url={shareUrl} />
+            </div>
             {post ? (
               <div className="mt-4 mb-3.5 flex flex-wrap gap-x-3.5 gap-y-1.5 font-mono text-xs text-muted md:mt-5 md:mb-4 md:text-[13px]">
                 <span className="text-accent">{post.tag}</span>
@@ -64,10 +70,14 @@ function PostLayout({ id, imgUrl, alt, title, summary, children }: PostLayoutPro
 
           <div className="post-content">{children}</div>
 
+          <div className="mt-12 border-t border-line pt-4">
+            <CopyLinkButton url={shareUrl} />
+          </div>
+
           {next && next.id !== id ? (
             <Link
               href={next.blogPath}
-              className="group mt-10 flex flex-col gap-2 rounded-[14px] border border-line bg-card p-5.5 transition-colors hover:border-line-strong hover:text-text md:p-7"
+              className="group mt-6 flex flex-col gap-2 rounded-[14px] border border-line bg-card p-5.5 transition-colors hover:border-line-strong hover:text-text md:p-7"
             >
               <span className="font-mono text-xs text-accent">NEXT POST →</span>
               <span className="font-display text-[22px] leading-tight font-medium transition-colors group-hover:text-accent md:text-[26px]">
