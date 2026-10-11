@@ -14,15 +14,16 @@ export interface Blog {
 export const blogs: Blog[] = [
   {
     id: "email-api",
-    tag: "JAVA",
+    tag: "JAVA · .NET · AWS",
     readingTime: 11,
     blogPath: "/blog/email-api",
     date: "2026-10-10",
-    imageAlt: "Java, .NET, Python, Rust, Terraform and AWS logos on a coloured gradient",
+    imageAlt:
+      "Java, .NET, Python, Rust, Terraform and AWS logos on a coloured gradient",
     imageUrl: "https://lvmp-v2.s3.af-south-1.amazonaws.com/email-api-cover.png",
     summary:
       "How my twice-weekly market update email went from one .NET Lambda to a Spring Boot Email API on AWS, and what I'd write differently now",
-    title: "From One Lambda to Four: How My Market Emails Grew Up 📈",
+    title: "From One Lambda to Four: How My Market Emails Grew Up",
     pinned: true,
   },
   {
@@ -32,8 +33,10 @@ export const blogs: Blog[] = [
     blogPath: "/blog/excel-mapper",
     date: "2025-05-01",
     imageAlt: "Java Excel Mapper Cover",
-    imageUrl: "https://lvmp-v2.s3.af-south-1.amazonaws.com/java-excel-mapper-cover.png",
-    summary: "A quick walk through the logic that maps any excel file into objects",
+    imageUrl:
+      "https://lvmp-v2.s3.af-south-1.amazonaws.com/java-excel-mapper-cover.png",
+    summary:
+      "A quick walk through the logic that maps any excel file into objects",
     title: "Breakdown: Mapping any excel file into objects",
     pinned: true,
   },
@@ -56,7 +59,8 @@ export const blogs: Blog[] = [
     blogPath: "/blog/ai-experiment",
     date: "2024-08-18",
     imageAlt: "Azure OpenAI Cover",
-    imageUrl: "https://lvmp-v2.s3.af-south-1.amazonaws.com/openai-next-dotnet.png",
+    imageUrl:
+      "https://lvmp-v2.s3.af-south-1.amazonaws.com/openai-next-dotnet.png",
     summary: "How my attempt at using an Open Source AI model went",
     title: "I tried an Open Source AI model for Image Recognition",
     pinned: true,
@@ -69,7 +73,8 @@ export const blogs: Blog[] = [
     date: "2024-07-31",
     imageAlt: "Azure Cost Management Cover",
     imageUrl: "https://lvmp-v2.s3.af-south-1.amazonaws.com/azure.png",
-    summary: "A description of how I keep my Azure bill low with multiple resources being used",
+    summary:
+      "A description of how I keep my Azure bill low with multiple resources being used",
     title: "How I keep my Azure bill under $0.01",
     pinned: false,
   },
@@ -80,8 +85,10 @@ export const blogs: Blog[] = [
     blogPath: "/blog/php-tailwind-git",
     date: "2024-04-07",
     imageAlt: "PHP, Tailwind, Git & GitHub Cover",
-    imageUrl: "https://lvmp-v2.s3.af-south-1.amazonaws.com/php-tailwind-git.png",
-    summary: "We took on a client project and made some mistakes along the way. Here's what we learned.",
+    imageUrl:
+      "https://lvmp-v2.s3.af-south-1.amazonaws.com/php-tailwind-git.png",
+    summary:
+      "We took on a client project and made some mistakes along the way. Here's what we learned.",
     title: "What we did wrong in this project: PHP, Tailwind, Git & GitHub",
     pinned: false,
   },
