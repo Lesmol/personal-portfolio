@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRightIcon } from "@/components/icons";
+import { socialLinks } from "@/data/socials";
 
 const stack = ["Java · Spring Boot", "C# · .NET Core", "AWS · Terraform", "Python", "Rust", "Docker", "React · Next.js · Vite"];
 
@@ -36,6 +37,24 @@ function Hero() {
         >
           Read the blog
         </Link>
+        <ul className="flex gap-3" aria-label="Social links">
+          {socialLinks.map((link) => (
+            <li key={link.name}>
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={link.name}
+                title={link.name}
+                className="inline-flex size-12.5 items-center justify-center rounded-[10px] border border-line-strong text-soft hover:border-accent md:size-12"
+              >
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                  <path d={link.iconPath} />
+                </svg>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
 
       <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-mono text-[13px] text-muted">
