@@ -24,11 +24,11 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Lesmol/statement-analysis_springboot",
   },
   {
-    tag: "SERVERLESS · PYTHON · RUST",
+    tag: "SERVERLESS · PYTHON",
     name: "Market Financials",
     description:
-      "A market data platform on AWS Lambda: a containerised Python function serving financial statements and a Rust authoriser validating API keys against DynamoDB, deployed with Terraform and GitHub Actions.",
-    stack: ["Python", "Rust", "DynamoDB", "Terraform", "GitHub Actions"],
+      "A market data platform on AWS Lambda: a containerised Python function serving financial statements and a Python authoriser validating API keys against DynamoDB, deployed with Terraform and GitHub Actions.",
+    stack: ["Python", "API Gateway", "DynamoDB", "Terraform", "GitHub Actions"],
     githubUrl: "https://github.com/Lesmol/market-financials_lambda",
   },
   {
